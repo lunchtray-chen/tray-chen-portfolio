@@ -36,6 +36,10 @@ h3 {
     font-size: 20px;
 }
 
+.bolded {
+    font-weight: 700;
+}
+
 .bodytext, .handwritten {
     font-weight: 400;
     font-style: normal;
@@ -184,7 +188,7 @@ h2 {
     position: relative;
 }
 
-.professional {
+.projects {
     margin-top: 147px;
     display: flex;
     flex-direction: column;
@@ -194,8 +198,52 @@ h2 {
     width: 100%;
 }
 
-.professional .item {
+.projects .item {
     height: 460px;
     width: 100%;
-    background-color: #524B18;
+    background-color: #686131;
+}
+
+.projects h1.professional {
+    margin-left: 188px;
+}
+
+.projects h1.personal {
+    text-align: right;
+    margin-right: 188px;
+}
+
+.projects .item {
+    display: flex;
+    padding: 0 188px;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.projects .professional.item {
+    flex-direction: row
+}
+
+.projects .personal.item {
+    flex-direction: row-reverse;
+}
+
+.projects .item .visuals, .projects .item .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .item .visuals {
+    gap: 24px;
+}
+
+.projects .item .text {
+    text-align: right;
+    gap: 35px;
+}
+
+.projects .personal.item .text {
+    text-align: left;
+    gap: 35px;
 }
