@@ -6,8 +6,9 @@ body {
     background-color: #FFF8EA;
     background-image: url("images/bg_texture.png");
     background-size: 100%; 
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     margin: 0px;
+    background-attachment: fixed;
 }
 
 * {
@@ -235,6 +236,7 @@ h2 {
 }
 
 .projects .item .visuals {
+    align-items: center;
     gap: 24px;
 }
 
@@ -247,3 +249,30 @@ h2 {
     text-align: left;
     gap: 35px;
 }
+
+/* About section */
+
+.about-me {
+    position: relative;
+    margin: 150px 200px;
+}
+
+.about-me * {
+    color: #31281E;
+}
+
+.about-me .big {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+}
+
+.about-me .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 0px;
+}
+
