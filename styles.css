@@ -139,6 +139,20 @@ h2 {
     left: 140px;
 }
 
+/* Random animation thing */
+
+@keyframes shake {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(5px, 5px) rotate(5deg); }
+    50%  { transform: translate(0, 0) rotate(0deg); }
+    75%  { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.hero .me:hover, .skills img:hover { 
+    animation: shake 0.4s infinite;
+}
+
 .hero .content {
     position: absolute;
     display: flex;
