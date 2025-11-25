@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FFF8EA;
     background-image: url("images/bg_texture.png");
