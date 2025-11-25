@@ -1,0 +1,96 @@
+body {
+    background-color: #FFF8EA;
+    background-image: url("images/bg_texture.png");
+    background-size: 100%; 
+    background-repeat: repeat-y;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* STUFF BELOW ARE FONTS AND TEXT STYLES */
+
+h1, h2, h3, .bodytext, .handwritten {
+    color: #FFF8EA;
+}
+
+h1 {
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 56px;
+}
+
+
+h3 {
+    font-family: "Inria Serif", serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.bodytext, .handwritten {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.bodytext {
+    font-family: "Inika", serif;
+}
+
+.handwritten {
+    font-family: "Gloria Hallelujah", cursive;
+    color: #31281E;
+}
+
+h2, .logo {
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+/* NAVIGATION BAR RELATED */
+
+.navbar {
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    padding: 21px;
+    list-style-type: none;
+    background-color: #FFF8EA;
+}
+
+.navbar li {
+    color: #31281E;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #31281E;
+    transition: all 0.2s ease 0s;
+}
+
+.navbar a:hover {
+    color: #a46c2d;
+}
