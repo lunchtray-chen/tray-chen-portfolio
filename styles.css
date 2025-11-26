@@ -160,6 +160,10 @@ h2 {
     animation: shake 0.4s infinite;
 }
 
+.underlined {
+    transition: width 0.25s ease-out;
+}
+
 .hero .content {
     position: absolute;
     display: flex;
