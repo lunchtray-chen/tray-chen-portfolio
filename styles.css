@@ -111,7 +111,7 @@ h2 {
     top: 80px;
 }
 
-.hero .bg-rects {
+.bg-rects {
     z-index: -1;
 }
 
@@ -125,6 +125,13 @@ h2 {
     height: 29px;
     width: 100%;
     background-color: #F6E0B0;
+}
+
+.rect-footer {
+    height: 300px;
+    width: 100%;
+    background-color: #31281E;
+    margin: 18px 0px 0px 0px;
 }
 
 .portfolio .rect-hero {
@@ -287,8 +294,32 @@ h2 {
 .about-me .text {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin: 65px 0px;
+    gap: 25px;
+    margin: 80px 0px;
     justify-content: center;
     align-items: center;
+}
+
+/* Footer section */
+
+footer {
+    width: 100%;
+    position: relative;
+}
+
+footer .contact {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 105px;
+}
+
+footer .contact .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 74px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 50px;
 }
