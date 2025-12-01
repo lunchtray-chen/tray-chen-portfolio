@@ -27,7 +27,7 @@ h1 {
     font-family: "Inria Serif", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 56px;
+    font-size: clamp(40px, 4vw, 56px);
 }
 
 h3 {
@@ -140,13 +140,6 @@ h2 {
     height: 29px;
     width: 100%;
     background-color: #F6E0B0;
-}
-
-.rect-footer {
-    height: 300px;
-    width: 100%;
-    background-color: #31281E;
-    margin: 18px 0px 0px 0px;
 }
 
 .portfolio .rect-hero {
@@ -334,6 +327,13 @@ footer {
     position: relative;
 }
 
+.rect-footer {
+    height: 300px;
+    width: 100%;
+    background-color: #31281E;
+    margin: 18px 0px 0px 0px;
+}
+
 footer .contact {
     position: absolute;
     text-align: center;
@@ -344,9 +344,30 @@ footer .contact {
 footer .contact .buttons {
     display: flex;
     flex-direction: row;
-    gap: 74px;
+    gap: 4vw;
     justify-content: center;
     align-items: center;
     flex: 1;
     margin-top: 50px;
+    flex-wrap: nowrap;
+}
+
+.footer-dot {
+    display: inline-block;
+}
+
+@media (max-width: 880px) {
+    .footer-dot {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    footer .contact .buttons {
+        flex-direction: column;
+    }
+
+    .rect-footer {
+        height: 550px;
+    }
 }
