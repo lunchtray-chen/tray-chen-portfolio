@@ -59,7 +59,7 @@ h2 {
 }
 
 .logo {
-    font-size: clamp(12px, 3vw, 28px);
+    font-size: clamp(16px, 4vw, 28px);
     color: #31281E;
     white-space: nowrap;
 }
@@ -106,6 +106,16 @@ h2 {
         gap: 1rem;
         padding: 8px;
         flex-wrap: nowrap;
+    }
+}
+
+.nav-link {
+    display: inline-block;
+}
+
+@media (max-width: 520px) {
+    .nav-link {
+        display: none;
     }
 }
 
