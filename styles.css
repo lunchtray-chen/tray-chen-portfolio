@@ -5,10 +5,10 @@ html {
 body {
     background-color: #FFF8EA;
     background-image: url("images/bg_texture.png");
-    background-size: 100%; 
-    background-repeat: no-repeat;
-    margin: 0px;
-    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: auto;         
+    background-attachment: scroll; 
+    margin: 0;
 }
 
 * {
@@ -219,9 +219,17 @@ h2 {
 .skills {
     position: relative;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 175px;
-    margin: 250px 0px 150px 0px;
+    align-items: center;
+    gap: 12vw;
+    margin: 30vh 0 20vh 0;
+}
+
+@media (max-width: 720px) {
+    .skills {
+        flex-direction: column;
+    }
 }
 
 /* Portfolio section */
