@@ -45,7 +45,7 @@ h3 {
     font-family: "Inika", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: clamp(16px, 3.5vw, 20px);
 }
 
 h2, .logo {
@@ -55,7 +55,7 @@ h2, .logo {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: clamp(30px, 4vw, 36px)
 }
 
 .logo {
@@ -295,7 +295,7 @@ h2 {
 
 .about-me {
     position: relative;
-    margin: 100px 250px;
+    margin: 12vh 18vw;
 }
 
 .about-me * {
@@ -306,18 +306,27 @@ h2 {
 .about-me .content, .about-me .content .text .about-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 6vw;
+}
+
+.about-me .content {
+    margin: 6vh 0;
 }
 
 .about-me .text {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin: 80px 0px;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 900px) {
+    .about-me .content {
+        flex-direction: column;
+    }
 }
 
 /* Footer section */
