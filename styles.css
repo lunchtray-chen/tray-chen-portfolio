@@ -34,7 +34,7 @@ h3 {
     font-family: "Inria Serif", serif;
     font-weight: 300;
     font-style: italic;
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
 }
 
 .bolded {
@@ -45,7 +45,7 @@ h3 {
     font-family: "Inika", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(16px, 3.5vw, 20px);
+    font-size: clamp(16px, 3vw, 20px);
 }
 
 h2, .logo {
@@ -140,11 +140,7 @@ h2 {
     height: 29px;
     width: 100%;
     background-color: #F6E0B0;
-}
-
-.portfolio .rect-hero {
-    width: 100%;
-    height: 3318px;
+    margin: 18px 0px;
 }
 
 .hero .me {
@@ -216,7 +212,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 12vw;
-    margin: 30vh 0 20vh 0;
+    margin: 30vh 0 18vh 0;
 }
 
 @media (max-width: 720px) {
@@ -231,36 +227,33 @@ h2 {
 }
 
 .projects {
-    margin-top: 147px;
     display: flex;
     flex-direction: column;
-    gap: 100px;
-    position: absolute;
+    gap: 12vh;
+    position: relative;
     top: 0;
     width: 100%;
+    background-color: #887E3B;
+    padding: 12vh 0 18vh 0;
 }
 
 .projects .item {
-    height: 460px;
+    padding: 6vh 12vw;
     width: 100%;
     background-color: #686131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
 }
 
 .projects h1.professional {
-    margin-left: 188px;
+    margin-left: 12vw;
 }
 
 .projects h1.personal {
     text-align: right;
-    margin-right: 188px;
-}
-
-.projects .item {
-    display: flex;
-    padding: 0 188px;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
+    margin-right: 12vw;
 }
 
 .projects .professional.item {
@@ -289,6 +282,31 @@ h2 {
 .projects .personal.item .text {
     text-align: left;
     gap: 35px;
+}
+
+@media (max-width: 1200px) {
+    .projects .personal.item, .projects .professional.item {
+        flex-direction: column-reverse;
+    }
+
+    .projects .item .text, .projects .personal.item .text {
+        text-align: center;
+    }
+
+    .projects h1.professional {
+        text-align: center;
+        margin: 0 12vw;
+    }
+
+    .projects h1.personal {
+        text-align: center;
+        margin: 0 12vw;
+    }
+    
+    .projects .item .visuals img {
+    max-width: 100%;
+    height: auto;
+    }
 }
 
 /* About section */
