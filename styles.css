@@ -119,36 +119,6 @@ h2 {
     }
 }
 
-/* Hero Elements */
-
-.hero {
-    position: relative;
-    margin: 12vh 0;
-}
-
-.bg-rects {
-    z-index: -1;
-}
-
-.rect-hero {
-    height: 55vh;
-    width: 100%;
-    background-color: #887E3B;
-}
-.rect-line {
-    height: 29px;
-    width: 100%;
-    background-color: #F6E0B0;
-    margin: 18px 0px;
-}
-
-.hero .me {
-    position: absolute;
-    z-index: 0;
-    top: 230px;
-    left: 140px;
-}
-
 /* Random animation thing */
 
 @keyframes shake {
@@ -157,6 +127,29 @@ h2 {
     50%  { transform: translate(0, 0) rotate(0deg); }
     75%  { transform: translate(-5px, 5px) rotate(-5deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Hero Elements */
+
+.hero {
+    position: relative;
+    background-color: #31281E;
+}
+
+.rect-line {
+    height: 29px;
+    width: 100%;
+    background-color: #F6E0B0;
+    margin: 18px 0px;
+    z-index: -1;
+}
+
+.hero .me {
+    position: absolute;
+    z-index: 0;
+    top: 35vh;
+    left: 8vw;
+    display: inline-block;
 }
 
 .hero .me:hover, .skills img:hover { 
@@ -168,23 +161,44 @@ h2 {
 }
 
 .hero .content {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    top: -32px;
-    padding: 0 8vw 0 16vw;
+    padding: 4vh 8vw 4vh 16vw;
+    gap: 4vw;
 }
 
 .hero .content .herotext {
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 120px;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 4vh;
+    padding: 0 2vw;
+}
+
+@media (max-width: 930px) {
+    .hero .content {
+        flex-direction: column-reverse;
+        padding: 10vh 14vw;
+        gap: 6vw;
+    }
+
+    .hero .me {
+        position: absolute;
+        z-index: 0;
+        top: 75vh;
+        left: 14vw;
+    }
+}
+
+@media (max-width: 750px) {
+    .hero .me {
+        display: none;
+    }
 }
 
 /* Button stuff */
@@ -210,7 +224,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 12vw;
-    margin: 20vh 0 20vh 0;
+    margin: 14vh 0;
 }
 
 @media (max-width: 720px) {
@@ -357,6 +371,7 @@ footer {
     width: 100%;
     background-color: #31281E;
     margin: 18px 0px 0px 0px;
+    z-index: -1;
 }
 
 footer .contact {
