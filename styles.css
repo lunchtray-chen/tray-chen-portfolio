@@ -123,7 +123,7 @@ h2 {
 
 .hero {
     position: relative;
-    top: 80px;
+    margin: 12vh 0;
 }
 
 .bg-rects {
@@ -131,10 +131,9 @@ h2 {
 }
 
 .rect-hero {
-    height: 368px;
+    height: 55vh;
     width: 100%;
     background-color: #887E3B;
-    margin: 18px 0px;
 }
 .rect-line {
     height: 29px;
@@ -175,8 +174,7 @@ h2 {
     justify-content: center;
     align-items: center;
     top: -32px;
-    padding-left: 230px;
-    padding-right: 150px;
+    padding: 0 8vw 0 16vw;
 }
 
 .hero .content .herotext {
@@ -212,7 +210,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 12vw;
-    margin: 30vh 0 18vh 0;
+    margin: 20vh 0 20vh 0;
 }
 
 @media (max-width: 720px) {
