@@ -80,7 +80,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 33px;
-    padding: 15px;
+    padding: 0px;
     list-style-type: none;
     background-color: #FFF8EA;
     white-space: nowrap;
@@ -88,7 +88,7 @@ h2 {
 
 .navbar li:not(.logo) {
     color: #31281E;
-    font-size: clamp(12px, 2vw, 20px);
+    font-size: clamp(18px, 2vw, 20px);
 }
 
 .navbar a {
@@ -101,11 +101,46 @@ h2 {
     color: #a46c2d;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown a {
+    display: block;
+    padding: 20px 15px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    min-width: clamp(60px 5vw 100px);
+    background-color: #FFF8EA;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.dropdown:hover>a {
+    background-color: #F6E0B0;
+    color: #a46c2d;
+}
+
+.dropdown .content a:hover {
+    background-color: #F6E0B0;
+}
+
 @media (max-width: 900px) {
     .navbar ul {
-        gap: 1rem;
+        gap: 2rem;
         padding: 8px;
         flex-wrap: nowrap;
+    }
+
+    .navbar ul .dot {
+        display: none;
     }
 }
 
@@ -113,7 +148,28 @@ h2 {
     display: inline-block;
 }
 
-@media (max-width: 520px) {
+#sidebar {
+    display: none;
+}
+
+.dropdown .content {
+    position: absolute;
+    font-size: 16px;
+    box-shadow: none;
+}
+
+@media (max-width: 720px) {
+    .navbar ul {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #sidebar {
+        display: inline-block;
+        cursor: pointer;
+        z-index: 100;
+    }
+
     .nav-link {
         display: none;
     }
@@ -203,6 +259,11 @@ h2 {
         z-index: 0;
         top: 75vh;
         left: 14vw;
+    }
+
+    .hero .content img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -327,8 +388,8 @@ h2 {
     }
     
     .projects .item .visuals img {
-    max-width: 100%;
-    height: auto;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -367,6 +428,11 @@ h2 {
 @media (max-width: 900px) {
     .about-me .content {
         flex-direction: column;
+    }
+
+    .about-me .content img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -421,4 +487,14 @@ footer .contact .buttons {
     .rect-footer {
         height: 550px;
     }
+}
+
+/* OTHER SUB-PAGES!!! */
+
+.test {
+    background-color: #FFF8EA;
+    background-image: url("images/test-img.png");
+    background-repeat: no-repeat;
+    background-size: 100%;         
+    margin: 0;
 }
