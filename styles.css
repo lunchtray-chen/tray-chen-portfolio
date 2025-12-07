@@ -27,7 +27,7 @@ h1 {
     font-family: "Inria Serif", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(40px, 4vw, 56px);
+    font-size: clamp(35px, 4vw, 56px);
 }
 
 h3 {
@@ -430,7 +430,7 @@ h2 {
         flex-direction: column;
     }
 
-    .about-me .content img {
+    .about-me .content>img {
         max-width: 100%;
         height: auto;
     }
