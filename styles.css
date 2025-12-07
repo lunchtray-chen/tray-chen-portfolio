@@ -27,7 +27,7 @@ h1 {
     font-family: "Inria Serif", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(35px, 4vw, 56px);
+    font-size: clamp(40px, 4vw, 56px);
 }
 
 h3 {
@@ -471,6 +471,10 @@ footer .contact .buttons {
 
 .footer-dot {
     display: inline-block;
+}
+
+footer h1 {
+    font-size: clamp(30px, 4vw, 56px);
 }
 
 @media (max-width: 880px) {
