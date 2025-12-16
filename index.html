@@ -17,10 +17,10 @@
             <li class="bodytext nav-link dropdown">
                 <a>Portfolio ⇣</a>
                 <div class="content bodytext">
-                    <a href="#">QAI Institute</a>
-                    <a href="#">2TF</a>
+                    <a href="https://docs.google.com/presentation/d/1yORiS8qENSCIVi-KZZce_kg2LhShWlwF6-dfxQ6oxKk/edit?slide=id.g38272cf3a14_0_0#slide=id.g38272cf3a14_0_0" target="_blank">QAI Institute</a>
+                    <a href="https://docs.google.com/presentation/d/1yORiS8qENSCIVi-KZZce_kg2LhShWlwF6-dfxQ6oxKk/edit?slide=id.g38272cf3a14_0_0#slide=id.g38272cf3a14_0_0" target="_blank">2TF</a>
                     <a href="watchtower.html">Watchtower 72</a>
-                    <a href="#">Yearbook</a>
+                    <a href="https://drive.google.com/drive/folders/1aW3rjtfZa2ZmeSkihkTCaS3gZhz5fp83?usp=sharing" target="_blank">Yearbook</a>
                     <a href="#">Artwork</a>
                 </div>
             </li>
@@ -32,13 +32,21 @@
             <li class="bodytext nav-link"><a href="images/Tray_Chen_Design_Resume.pdf" download="Tray_Chen_Design_Resume.pdf" target="_blank">Resume</a></li>
             <li class="bodytext nav-link dot">•</li>
             <li class="bodytext nav-link"><a href="mailto:gtchen2@stanford.edu">Contact Me</a></li>
-            <li id="side-menu"><img src="images/menu-icon.png" width="28" height="28"></li>
+            <li id="side-menu" onclick=showSidebar()><img src="images/menu-icon.png" width="28" height="28"></li>
         </ul>
     </nav>
 
     <nav class="sidebar">
         <ul>
-            <li class="bodytext nav-link"><a>Portfolio ⇣</a></li>
+            <li><img onclick=hideSidebar() src="images/exit.png" width="32px" height="32px" style="cursor: pointer;"></li>
+            <li class="bodytext nav-link"><a onclick=showDropdown()>Portfolio ⇣</a></li>
+            <li class="bodytext nav-link dropdown">
+                <a href="https://docs.google.com/presentation/d/1yORiS8qENSCIVi-KZZce_kg2LhShWlwF6-dfxQ6oxKk/edit?slide=id.g38272cf3a14_0_0#slide=id.g38272cf3a14_0_0" target="_blank">QAI Institute</a>
+                <a href="https://docs.google.com/presentation/d/1yORiS8qENSCIVi-KZZce_kg2LhShWlwF6-dfxQ6oxKk/edit?slide=id.g38272cf3a14_0_0#slide=id.g38272cf3a14_0_0" target="_blank">2TF</a>
+                <a href="watchtower.html">Watchtower 72</a>
+                <a href="https://drive.google.com/drive/folders/1aW3rjtfZa2ZmeSkihkTCaS3gZhz5fp83?usp=sharing" target="_blank">Yearbook</a>
+                <a href="#">Artwork</a>
+            </li>
             <li class="bodytext nav-link"><a href="index.html #about">About</a></li>
             <li class="bodytext nav-link"><a href="images/Tray_Chen_Design_Resume.pdf" download="Tray_Chen_Design_Resume.pdf" target="_blank">Resume</a></li>
             <li class="bodytext nav-link"><a href="mailto:gtchen2@stanford.edu">Contact Me</a></li>

@@ -15,3 +15,20 @@ const observer = new IntersectionObserver((entries, obs) => {
 }, { threshold: 0.25 });
 
 faders.forEach(fadeEl => observer.observe(fadeEl));
+
+function showSidebar(){
+  const sidebar = document.querySelector(".sidebar")
+  sidebar.style.display = "inline-block"
+}
+function hideSidebar(){
+  const sidebar = document.querySelector(".sidebar")
+  sidebar.style.display = "none"
+}
+function showDropdown(){
+  const dropdown = document.querySelector(".sidebar .dropdown")
+  if (dropdown.style.display === "none" || dropdown.style.display === "") {
+    dropdown.style.display = "inline-block";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
