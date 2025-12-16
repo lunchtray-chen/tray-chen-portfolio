@@ -9,6 +9,7 @@ html {
     --caramel: #a46c2d;
     --matcha: #887E3B;
     --dark-matcha: #686131;
+    --dark-blue: #2B2A31;
 }
 
 body {
@@ -535,10 +536,59 @@ footer h1 {
 
 /* OTHER SUB-PAGES!!! */
 
-.watch .hero {
-    background-color: var(--cream);
-    background-image: url("images/watch-hero-bg.webp");
-    background-repeat: no-repeat;
-    background-size: 100%;         
+body.watch {
+    background-color: var(--dark-blue);
+    background-image: url("images/dark-bg-texture.png");
+    background-repeat: repeat;
+    background-size: auto;         
+    background-attachment: scroll; 
     margin: 0;
+}
+
+.watch .hero {
+    background-image: url("images/watch-hero-bg.webp");
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    gap: 33px;
+    text-align: center;
+}
+
+.watch .made-by {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch .characters, .watch .gallery {
+    background-image: url("images/char-texture-bg.png");
+    background-repeat: repeat;
+    background-size: auto;         
+    background-attachment: scroll; 
+    margin: 0;
+}
+
+.watch .characters {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 200px;
+}
+
+.watch .characters .char-box {
+    background-color: rgba(0, 0, 0, 0.366);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.char-box .text {
+    display: flex;
+    flex-direction: column;
 }
