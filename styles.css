@@ -242,6 +242,17 @@ h2 {
 .hero {
     position: relative;
     background-color: var(--dark-brown);
+    background-image: url(images/hero-bg.png);
+    background-size: cover;
+    background-position: 80% 20%;
+    margin: 0;
+}
+
+body:not(.watch, .art) .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.80);
 }
 
 .rect-line {
@@ -660,4 +671,12 @@ video {
 
 .watch footer .rect-line, .watch footer .rect-footer{
     background-color: var(--dark-blue);
+}
+
+/* ARTWORK subpage */
+
+.art .hero {
+    background-image: url("images/art-hero-bg.png");
+    background-size: cover;
+    margin: 0;
 }
