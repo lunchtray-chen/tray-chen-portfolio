@@ -800,3 +800,22 @@ video {
     gap: 4vh;
     align-items: flex-start;
 }
+
+.artstation {
+    position: relative;
+    background-color: var(--dark-matcha);
+    padding: 4vh;
+    margin: 10vh 0;
+}
+
+.artstation h2 {
+    position: absolute;
+    right: 4vw;
+    top: 50%;
+}
+
+iframe {
+    background-color: var(--matcha);
+    background-image: radial-gradient(#ffffff 2px, transparent 2px);
+    background-size: 30px 30px;
+}

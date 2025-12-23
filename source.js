@@ -18,8 +18,55 @@ const observer = new IntersectionObserver((entries, obs) => {
 
 faders.forEach(fadeEl => observer.observe(fadeEl));
 
+//-------------------------------------------------------------------
 
-// makes the repetitive gallery html code
+// makes the sidebar appear and disappear when clicked
+
+function showSidebar(){
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "inline-block";
+}
+
+function hideSidebar(){
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+}
+
+function showDropdown(){
+  const dropdown = document.querySelector(".sidebar .dropdown")
+  if (dropdown.style.display === "none" || dropdown.style.display === "") {
+    dropdown.style.display = "block";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
+
+//-------------------------------------------------------------------
+
+// Generalizes building repetitive grid html
+
+function buildGrid(grid, desc, filename) {
+  if (grid) {
+    for (let i = 1; i <= desc.length; i++) {
+      grid.insertAdjacentHTML(
+        'beforeend',
+        `
+        <div class="fade-in">
+          <img src="images/art-page/${filename}-${i}.webp">
+          <h3>${desc[i - 1]}</h3>
+        </div>
+        `
+      );
+
+      const newEl = grid.lastElementChild;
+      observer.observe(newEl); 
+    }
+  }
+}
+
+//-------------------------------------------------------------------
+
+// Parts that actualy build the HTML
 
 const watchGallery = document.querySelector('.watch .gallery .two-grid');
 const watchImgDesc = [
@@ -37,77 +84,9 @@ const watchImgDesc = [
   "Beginning screen initial mockup"
 ]
 
-function buildGallery() {
-  if (watchGallery) {
-    for (let i = 1; i <= watchImgDesc.length; i++) {
-      watchGallery.insertAdjacentHTML(
-        'beforeend',
-        `
-        <div class="fade-in">
-          <img src="images/watch-gallery/watch-${i}.webp">
-          <h3>${watchImgDesc[i - 1]}</h3>
-        </div>
-        `
-      );
+buildGrid(watchGallery, watchImgDesc, "watch");
 
-      const newEl = watchGallery.lastElementChild;
-      observer.observe(newEl); 
-    }
-  }
-}
-
-buildGallery();
-
-/*
-<div class="fade-in">
-                    <img src="images/watch-gallery/watch-1.webp">
-                    <h3 data-index="0"></h3>
-                </div>
-                <div class="fade-in">
-                    <img src="images/watch-gallery/watch-2.webp">
-                    <h3 data-index="1"></h3>
-                </div>
-                <div class="fade-in">
-                    <img src="images/watch-gallery/watch-3.webp">
-                    <h3 data-index="2"></h3>
-                </div>
-                <div class="fade-in">
-                    <img src="images/watch-gallery/watch-4.webp">
-                    <h3 data-index="3"></h3>
-                </div>
-                <div class="fade-in">
-                    <img src="images/watch-gallery/watch-5.webp">
-                    <h3 data-index="4"></h3>
-                </div>
-                <div class="fade-in">
-                    <img src="images/watch-gallery/watch-6.webp">
-                    <h3 data-index="5"></h3>
-                </div>
-                <div class="fade-in">
-                    <img src="images/watch-gallery/watch-7.webp">
-                    <h3 data-index="6"></h3>
-                </div>
-                <div class="fade-in">
-                    <img src="images/watch-gallery/watch-8.webp">
-                    <h3 data-index="7"></h3>
-                </div>
-                <div class="fade-in">
-                    <img src="images/watch-gallery/watch-9.webp">
-                    <h3 data-index="8"></h3>
-                </div>
-                <div class="fade-in">
-                    <img src="images/watch-gallery/watch-10.webp">
-                    <h3 data-index="9"></h3>
-                </div>
-                <div class="fade-in">
-                    <img src="images/watch-gallery/watch-11.webp">
-                    <h3 data-index="10"></h3>
-                </div>
-                <div class="fade-in">
-                    <img src="images/watch-gallery/watch-12.webp">
-                    <h3 data-index="11"></h3>
-                </div>
-*/
+//-------------------------------------------------------------------
 
 // Code that makes the carousel work
 
@@ -122,25 +101,3 @@ nextButton.addEventListener("click", () => {
   slides.children[newIndex].dataset.active = true
   delete activeSlide.dataset.active
 }) 
-
-
-// makes the sidebar appear and disappear when clicked
-
-function showSidebar(){
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "inline-block";
-}
-
-function hideSidebar(){
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "none";
-}
-
-function showDropdown(){
-  const dropdown = document.querySelector(".sidebar .dropdown")
-  if (dropdown.style.display === "none" || dropdown.style.display === "") {
-    dropdown.style.display = "inline-block";
-  } else {
-    dropdown.style.display = "none";
-  }
-}
