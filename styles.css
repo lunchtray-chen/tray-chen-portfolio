@@ -747,7 +747,7 @@ video {
   height: 100%;
   display: block;
   position: absolute;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 90%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%);
 }
 
 .slide[data-active] {
@@ -786,7 +786,7 @@ video {
     background-color: rgba(255, 242, 229, 0.773);
 }
 
-/* Stuff below carousel */
+/* Art projects section */
 
 .art-projects * {
     color: var(--dark-brown);
@@ -817,21 +817,35 @@ video {
     align-items: flex-start;
 }
 
+/* Artstation plug and the funny cats */
+
 .artstation {
     position: relative;
     background-color: var(--dark-matcha);
     padding: 4vh;
-    margin: 10vh 0;
+    margin: 10vh 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    border-radius: 1.5rem;
 }
 
-.artstation h2 {
-    position: absolute;
-    right: 4vw;
-    top: 50%;
+.artstation .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+    text-align: center;
+    padding: 0 2vw;
 }
 
 iframe {
     background-color: var(--matcha);
-    background-image: radial-gradient(#ffffff 2px, transparent 2px);
+    background-image: radial-gradient(#f6ffe4 2px, transparent 2px);
     background-size: 30px 30px;
+    border: none;
+    width: 60%;
+    height: 410px;
+    border-radius: 1.5rem;
 }
