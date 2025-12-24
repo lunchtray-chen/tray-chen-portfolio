@@ -756,6 +756,14 @@ video {
     transition-delay: 0s;
 }
 
+.art-projects section {
+    display: none;
+}
+
+.art-projects section[data-active] {
+    display: block;
+}
+
 .carousel-button {
     position: absolute;
     background: none;

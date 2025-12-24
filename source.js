@@ -122,13 +122,17 @@ buildGrid(sketchGallery, "two-grid", sketchDesc, "sketches");
 // Code that makes the carousel work
 
 const nextButton = document.querySelector(".carousel-button");
+const artSections = document.querySelector(".art-projects")
 
 nextButton.addEventListener("click", () => {
   const slides = nextButton.closest(".carousel").querySelector("[data-slides]")
   const activeSlide = slides.querySelector("[data-active]")
+  const activeSection = artSections.querySelector("[data-active]")
   let newIndex = [...slides.children].indexOf(activeSlide) + 1
   if (newIndex >= slides.children.length) newIndex = 0
 
   slides.children[newIndex].dataset.active = true
+  artSections.children[newIndex].dataset.active = true
   delete activeSlide.dataset.active
+  delete activeSection.dataset.active
 }) 
