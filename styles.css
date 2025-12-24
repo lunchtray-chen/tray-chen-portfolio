@@ -632,7 +632,7 @@ video {
 
 /* GRID STUFF */
 
-.two-grid, .three-grid {
+.two-grid, .three-grid, .four-grid {
     display: grid;
     padding: 6vh 12vw;        
     gap: 4vw;     
@@ -641,14 +641,18 @@ video {
 }
 
 .two-grid {
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .three-grid {
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.three-grid img, .two-grid img {
+.four-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.three-grid img, .two-grid img, .four-grid img {
     margin-bottom: 3vh;
     max-width: 100%;
     height: auto;
@@ -656,7 +660,7 @@ video {
     transition: all 0.2s ease 0s;
 }
 
-.three-grid img:hover, .two-grid img:hover {
+.three-grid img:hover, .two-grid img:hover, .four-grid img:hover {
     transform: scale(1.03);
 }
 
@@ -676,6 +680,10 @@ video {
     .two-grid, .three-grid {
         grid-template-columns: 1fr;
         gap: 10vh; 
+    }
+
+    .four-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
     .watch .characters {

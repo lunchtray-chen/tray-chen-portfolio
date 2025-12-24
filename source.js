@@ -45,8 +45,9 @@ function showDropdown(){
 
 // Generalizes building repetitive grid html
 
-function buildGrid(grid, desc, filename) {
+function buildGrid(grid, gridType, desc, filename) {
   if (grid) {
+    grid.classList.add(gridType)
     for (let i = 1; i <= desc.length; i++) {
       grid.insertAdjacentHTML(
         'beforeend',
@@ -68,8 +69,8 @@ function buildGrid(grid, desc, filename) {
 
 // Parts that actualy build the HTML
 
-const watchGallery = document.querySelector('.watch .gallery .two-grid');
-const watchImgDesc = [
+const watchGallery = document.getElementById('watchGallery');
+let watchImgDesc = [
   "Watchtower's opening screen",
   "Watchtower's settings screen",
   "Initial UI mockup",
@@ -83,8 +84,38 @@ const watchImgDesc = [
   "Environment mockup",
   "Beginning screen initial mockup"
 ]
+buildGrid(watchGallery, "two-grid", watchImgDesc, "watch");
 
-buildGrid(watchGallery, watchImgDesc, "watch");
+const frogGallery = document.getElementById('frog');
+let frogDesc = [
+  "Top-down view of scene",
+  "Proof of creation (no textures)",
+  "Clay frog modeled by me"
+]
+buildGrid(frogGallery, "three-grid", frogDesc, "frog");
+
+const yearGallery = document.getElementById('yearbook');
+let yearDesc = [
+  "Sports section divider (front)",
+  "Sports section divider (back)",
+  "Arts section divider (back)",
+  "Introductory comic to the yearbook"
+]
+buildGrid(yearGallery, "four-grid", yearDesc, "yearbook");
+
+const bookGallery = document.getElementById('book');
+let bookDesc = [
+  "Unique Anthology Cover 2023",
+  "Unique Anthology Cover 2022"
+]
+buildGrid(bookGallery, "two-grid", bookDesc, "cover");
+
+const sketchGallery = document.getElementById('sketches');
+let sketchDesc = [
+  "Friend sketches",
+  "Some animals near a cafe"
+]
+buildGrid(sketchGallery, "two-grid", sketchDesc, "sketches");
 
 //-------------------------------------------------------------------
 
