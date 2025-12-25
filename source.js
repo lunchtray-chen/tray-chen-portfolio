@@ -20,6 +20,24 @@ faders.forEach(fadeEl => observer.observe(fadeEl));
 
 //-------------------------------------------------------------------
 
+// Makes enlarging images work
+
+const dialog = document.querySelector("#lightbox");
+const dialogImg = document.querySelector("#lightbox-img");
+
+document.addEventListener("click", e => {
+  const img = e.target.closest(".lightbox-img");
+  if (!img) return;
+
+  dialogImg.src = img.dataset.full || img.src;
+  dialogImg.alt = img.alt;
+  dialog.showModal();
+});
+
+dialog.addEventListener("click", () => dialog.close());
+
+//-------------------------------------------------------------------
+
 // makes the sidebar appear and disappear when clicked
 
 function showSidebar(){
@@ -53,7 +71,7 @@ function buildGrid(grid, gridType, desc, filename) {
         'beforeend',
         `
         <div class="fade-in">
-          <img src="images/art-page/${filename}-${i}.webp">
+          <img src="images/art-page/${filename}-${i}.webp" class="lightbox-img">
           <h3>${desc[i - 1]}</h3>
         </div>
         `

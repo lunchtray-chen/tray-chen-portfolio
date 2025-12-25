@@ -275,10 +275,6 @@ body:not(.watch, .art) .hero::before {
     animation: shake 0.4s infinite;
 }
 
-.underlined {
-    transition: width 0.25s ease-out;
-}
-
 .hero .content {
     position: relative;
     display: flex;
@@ -656,12 +652,6 @@ video {
     margin-bottom: 3vh;
     max-width: 100%;
     height: auto;
-    cursor: pointer;
-    transition: all 0.2s ease 0s;
-}
-
-.three-grid img:hover, .two-grid img:hover, .four-grid img:hover {
-    transform: scale(1.03);
 }
 
 @media (max-width: 1000px) {
@@ -848,4 +838,41 @@ iframe {
     width: 60%;
     height: 410px;
     border-radius: 1.5rem;
+}
+
+/* Below handles enlarging images for clearer view */
+
+.lightbox-img {
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+.lightbox-img:hover {
+    transform: scale(1.03);
+}
+
+dialog#lightbox {
+  border: none;
+  padding: 0;
+  background: transparent;
+  margin: auto;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+dialog#lightbox:focus {
+  outline: 2px solid rgba(176, 155, 215, 0.4);
+  outline-offset: 2px;
 }
