@@ -667,13 +667,14 @@ video {
         align-items: center;
     }
 
-    .two-grid, .three-grid {
+    .two-grid {
         grid-template-columns: 1fr;
         gap: 10vh; 
     }
 
-    .four-grid {
+    .four-grid, .three-grid {
         grid-template-columns: 1fr 1fr;
+        gap: 4vh;
     }
 
     .watch .characters {
@@ -715,7 +716,7 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 70% 30%;
+    object-position: 60% 40%;
 }
 
 .slide .text {
@@ -783,7 +784,7 @@ video {
 }
 
 .art-projects img {
-    border: solid 5px var(--dark-matcha);
+    border: solid 4px var(--dark-matcha);
 }
 
 .desc {
@@ -816,8 +817,10 @@ video {
     margin: 10vh 5vw;
     display: flex;
     flex-direction: row;
-    gap: 4vw;
+    gap: 3vw;
     border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .artstation .content {
@@ -828,6 +831,7 @@ video {
     gap: 6vh;
     text-align: center;
     padding: 0 2vw;
+    flex: 1;
 }
 
 iframe {
@@ -839,6 +843,65 @@ iframe {
     height: 410px;
     border-radius: 1.5rem;
 }
+
+@media (max-width: 700px) {
+    .slide::before {
+        background: rgba(0, 0, 0, 0.65);
+    }
+
+    .slide .text {
+        text-align: center;
+        left: 0; 
+        right: 0; 
+        top: 40%;
+        margin-inline: auto; 
+        width: fit-content;
+    }
+
+    .carousel-button {
+        top: 55%;
+        left: 0; 
+        right: 0; 
+        margin-inline: auto; 
+        width: fit-content;
+    }
+
+    .four-grid, .three-grid {
+        grid-template-columns: 1fr;
+        gap: 10vh; 
+    }
+}
+
+@media (max-width: 1000px) {
+    .artstation {
+        flex-direction: column;
+        gap: 6vh;
+    }
+
+    .artstation .content {
+        gap: 4vh;
+        padding: 0 10vw;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .desc {
+        flex-direction: column;
+    }
+
+    .desc .text {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desc>img {
+        max-width: 100%;
+    }
+}
+
 
 /* Below handles enlarging images for clearer view */
 

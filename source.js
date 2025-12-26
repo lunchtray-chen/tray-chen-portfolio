@@ -131,9 +131,16 @@ buildGrid(bookGallery, "two-grid", bookDesc, "cover");
 const sketchGallery = document.getElementById('sketches');
 let sketchDesc = [
   "Friend sketches",
-  "Some animals near a cafe"
+  "Some animals near a cafe",
+  "A couple in Paris Baguette",
+  "A woman on the Caltrain",
+  "Statue in Cantor Arts Center",
+  "Techbros prepping presentation on Caltrain",
+  "Chinese class",
+  "Friend sketches",
+  "Friend sketches"
 ]
-buildGrid(sketchGallery, "two-grid", sketchDesc, "sketches");
+buildGrid(sketchGallery, "three-grid", sketchDesc, "sketches");
 
 //-------------------------------------------------------------------
 
