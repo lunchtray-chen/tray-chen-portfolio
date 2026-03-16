@@ -1,0 +1,124 @@
+/* overlay boilerplate */
+
+.overlay-bg {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.436);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-overlay {
+    background-color: var(--red);
+    transition: all 0.2s ease 0s;
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-bottom: -8vh; 
+    margin-right: -3vw;
+    border-radius: 6px;
+    border: none;
+    z-index: 100;
+}
+
+.close-overlay:hover {
+    background-color: #ab280e;
+}
+
+/* css for NORMAL overlay format*/
+
+.overlay-content {
+    border-radius: 12px;
+    border: 8px solid var(--green);
+    width: 85vw;
+    max-height: 90vh;
+    padding: 4vh 6vw 8vh 6vw;
+    overflow-y: auto;
+    filter: drop-shadow(#383838 2px 6px 6px);
+    gap: 4vh;
+}
+
+.project-info {
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4vh 0;
+    gap: 4vw;
+}
+
+.info-text {
+    gap: 3vh;
+    min-width: 0;
+}
+
+.half-img {
+    width: 40%;        
+    height: auto;      
+    object-fit: cover; 
+}
+
+.overlay-content img:not(.half-img) {
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+/* css for alternate overlay formats */
+
+.normal, .models {
+    scrollbar-color: var(--light-blue) var(--light-gray);
+    background-color: white;
+}
+
+.blink-container {
+    gap: 3vw;
+    justify-content: center;
+    max-width: 30%;
+    align-self: center;
+}
+
+.watchtower {
+    background-color: rgb(52, 52, 82);
+    scrollbar-color: rgb(22, 22, 35) rgb(76, 76, 102);
+    color: white;
+    background-image: url("/watchtower/bg.webp");
+    background-repeat: repeat;
+    background-size: auto;         
+    background-attachment: scroll; 
+    border: 8px solid rgb(8, 8, 15);
+}
+
+.cloverknots {
+    scrollbar-color: rgb(89, 116, 39) rgb(183, 195, 131);
+    background-image: url("/cloverknots/bg.png");
+    background-repeat: repeat;
+    background-size: auto;         
+    background-attachment: scroll; 
+    border: 8px solid rgb(81, 96, 14);
+}
+
+.quantum {
+    background-color: rgb(18, 18, 23);
+    scrollbar-color: rgb(8, 8, 65) rgb(80, 80, 110);
+    color: white;
+    border: 8px solid rgb(8, 8, 15);
+}
+
+.models .model, .models Canvas {
+    border-radius: 12px;
+    background-color: var(--light-blue);
+    background-image: radial-gradient(#ffffff 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.models .model {
+    width: 100%;
+    height: 70vh;
+    border: 2px solid black;
+}

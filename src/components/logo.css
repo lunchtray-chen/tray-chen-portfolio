@@ -1,0 +1,29 @@
+.logo {
+  position: fixed;
+  z-index: 10;
+  right: 2vw;
+  top: 3vh;
+  width: 140px;
+  height: 140px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+    position: absolute;
+    object-fit: contain;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo:hover > .logo-star {
+    animation: logo-spin infinite .7s linear;
+}

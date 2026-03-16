@@ -1,0 +1,69 @@
+/* css related to the project cards */
+
+.project-card {
+    gap: 2vh;
+}
+
+.project-card img {
+    border-radius: 12px;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    filter: drop-shadow(#c2bfbb 1px 7px 4px);
+    border: 2px solid black;
+}
+
+.project-card > h3 {
+    align-self: flex-start;
+    cursor: pointer;
+    transition: all 0.15s ease 0s;
+}
+
+.project-card > h3:hover {
+    color: #9ca49a;
+}
+
+/* smaller keyword component */
+
+.keywords {
+    gap: 0.7vw;
+}
+
+.keyword {
+    border-radius: 6px;
+    background-color: var(--blue);
+    padding: 1vh 1vw;
+    width: auto;
+    font-family: 'Maiden Orange', serif;
+    font-size: 1.3rem;
+    color: white;
+    transition: all 0.2s ease 0s;
+}
+
+/* small hover img component */
+
+.hover-container {
+    position: relative;
+    margin-bottom: 2vh;
+}
+
+.hover-container img:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease 0.1s;
+}
+
+.hover-container img:first-child {
+    transition: opacity 0.2s ease;
+}
+
+.hover-container:hover img:first-child {
+    opacity: 0;
+    transition: opacity 0.2s ease 0.1s;
+}
+
+.hover-container:hover img:last-child {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}

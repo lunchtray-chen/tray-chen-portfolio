@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+  --cream: #FFF8EA;
+  --gold: #F3D38C;
+  --gold2: #BD894D;
+  --gold3: #95653B;
+  --gold4: #6B4625;
+  --dark-green: #303D00;
+  --red: #DF3E1E;
+  --blue: #4E69F0;
+  --green: #747f23;
+  --orange: #e3671f;
+  --greenblue: #03945f;
+  --indigo: #5142d6;
+  --light-gray: #E4E9FF;
+  --light-blue: #B6C2FF;
+}
+
+body {
+  background-color: var(--cream);
+  background-image: url("/bg-texture.webp");
+  background-repeat: repeat;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--dark-green);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+/* Font styles */
+
+h1 {
+  font-family: 'Irish Grover', serif;
+  font-size: 6rem;
+}
+
+h2 {
+  font-family: 'Maiden Orange', serif;
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: 'Maiden Orange', serif;
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-family: 'Irish Grover', serif;
+  font-size: 4rem;
+}
+
+p {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 1.2rem;
+}
+
+a {
+  color: inherit;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.font-red {
+  color: var(--red);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* high-level structural CSS */
+
+.navbar {
+  position: fixed;
+  z-index: 10;
+  width: 18vw;
+  height: 100vh;
+  top: 0;
+}
+
+.intro {
+  width: 70vw;
+  height: 65vh;
+  margin: 10vh 8vw 0 auto;
+  align-items: center;
+  gap: 0vw;
+}
+
+.intro-text {
+  gap: 3vh;
+  margin-top: 7vh;
+}
+
+.footer {
+  width: 100%;
+  height: 40vh;
+}
+
+.footer-text {
+  margin: 8vh 3vw 0 auto;
+  gap: 4vh;
+  text-align: right;
+}
