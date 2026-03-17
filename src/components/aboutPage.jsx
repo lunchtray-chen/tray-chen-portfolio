@@ -3,13 +3,13 @@ import './projectCard.css'
 import { useState } from 'react';
 
 const wordImgs = {
-    'Multidiciplinary': '/about-me/multi.png',
-    'A Poet': '/about-me/poet.png',
-    'Always Making Things': '/about-me/making.png',
-    'A Lover Of My Friends': '/about-me/friend.png',
-    'An Artist!!': '/about-me/artist.png',
-    'Lin-Manuel Miranda': '/about-me/lin.png',
-    'Going On Side Quests': '/about-me/side.jpg',
+    'Multidiciplinary': '/about-me/multi.webp',
+    'A Poet': '/about-me/poet.webp',
+    'Always Making Things': '/about-me/making.webp',
+    'A Lover Of My Friends': '/about-me/friend.webp',
+    'An Artist!!': '/about-me/artist.webp',
+    'Lin-Manuel Miranda': '/about-me/lin.webp',
+    'Going On Side Quests': '/about-me/side.webp',
 }
 
 const words = Object.keys(wordImgs)

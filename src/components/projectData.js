@@ -22,12 +22,12 @@ export const designProjects = [
     description: 'A sustainable hand-made fashion company.',
     timeframe: 'Jan 2026 - March 2026',
     tools: 'Figma, Adobe Photoshop, Adobe Illustrator, Risograph Printer',
-    longdesc: 'Built full branding for a theoretical sustainability-focused fashion company, from logo to branding guidelines to website frontend, combining a warm handmade feel with professional style: Cloverknots\' unique design language.',
-    keywords: ['UI/UX', 'Branding'], imgsrc: '/cloverknots/thumbnail.png', hoveredsrc: '/cloverknots/home.gif',
-    halfsrc: '/cloverknots/half.png', imgseries: ['/cloverknots/clover-1.png', '/cloverknots/clover-2.png',
-      '/cloverknots/clover-3.png', '/cloverknots/home.gif', '/cloverknots/knot.gif', '/cloverknots/clothes.gif',
-      '/cloverknots/scarf.png', '/cloverknots/clover-4.png', '/cloverknots/clover-5.png', '/cloverknots/clover-6.png',
-      '/cloverknots/clover-7.png'
+    longdesc: 'Built full branding for a sustainability-focused fashion company, from logo to branding guidelines to website frontend, combining a warm handmade feel with professional style: Cloverknots\' unique design language.',
+    keywords: ['UI/UX', 'Branding'], imgsrc: '/cloverknots/thumbnail.webp', hoveredsrc: '/cloverknots/home.gif',
+    halfsrc: '/cloverknots/half.webp', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
+      '/cloverknots/clover-3.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', '/cloverknots/clothes.gif',
+      '/cloverknots/scarf.webp', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
+      '/cloverknots/clover-7.webp'
     ]
   },
 
@@ -37,7 +37,7 @@ export const designProjects = [
     timeframe: 'June 2024 - Present',
     tools: 'Python, Adobe Photoshop, Audacity',
     longdesc: 'I am one of the 2 devs working on Watchtower 72, with my roles being: illustrator, concept artist, gameplay programmer, and UI designer. I wanted to convey a retro space aesthetic through both the character designs and the UI.',
-    keywords: ['Game Dev', 'Concept Art', 'UI/UX'], imgsrc: '/watchtower/thumbnail.png', hoveredsrc: '/watchtower/hover.gif',
+    keywords: ['Game Dev', 'Concept Art', 'UI/UX'], imgsrc: '/watchtower/thumbnail.webp', hoveredsrc: '/watchtower/hover.gif',
     halfsrc: '/watchtower/chiasma-logo.png', imgseries: ['watchtower/watch-1.webp', 'watchtower/watch-2.webp',
       'watchtower/watch-3.webp', 'watchtower/watch-4.webp', 'watchtower/watch-5.webp', 'watchtower/watch-6.webp',
       'watchtower/watch-7.webp', 'watchtower/watch-8.webp', 'watchtower/watch-9.webp', 'watchtower/watch-10.webp',
@@ -51,9 +51,9 @@ export const designProjects = [
     timeframe: 'June 2025 - Present',
     tools: 'Figma, Google Slides',
     longdesc: 'I produced and designed decks shown to investors/partners, leading to real conversions. Designed social media and outreach assets, event banners, and branding guidelines.',
-    keywords: ['Professional', 'Product Design'], imgsrc: '/qai/thumbnail.png', hoveredsrc: '/qai/hover.gif',
-    halfsrc: '/qai/half.png', imgseries: ['/qai/qai-1.png', '/qai/qai-3.png', '/qai/qai-4.png',
-      '/qai/qai-5.png', '/qai/qai-6.png', '/qai/qai-7.png', '/qai/qai-8.png', '/qai/qai-9.png'
+    keywords: ['Professional', 'Product Design'], imgsrc: '/qai/thumbnail.webp', hoveredsrc: '/qai/hover.gif',
+    halfsrc: '/qai/half.webp', imgseries: ['/qai/qai-1.webp', '/qai/qai-3.webp', '/qai/qai-4.webp',
+      '/qai/qai-5.webp', '/qai/qai-6.webp', '/qai/qai-7.webp', '/qai/qai-8.webp', '/qai/qai-9.webp'
     ]
   },
 
@@ -63,9 +63,9 @@ export const designProjects = [
     timeframe: 'May 2025 - Sept 2025',
     tools: 'Notion, Google Sheets, Paradigm',
     longdesc: 'Conducted research, interviewed 5+ founders, and organized >600 entries of data to create the 2TF Notion Founder Directory, which was shipped out to the Second Time Founder community. Some information censored for member confidentiality.',
-    keywords: ['Professional', 'Product Design'], imgsrc: '/2tf/thumbnail.png', hoveredsrc: '/2tf/hover.gif',
-    halfsrc: '/2tf/half.png', imgseries: ['/2tf/2tf-1.png', '/2tf/2tf-2.png', '/2tf/2tf-3.png', '/2tf/2tf-4.png',
-      '/2tf/2tf-5.png', '/2tf/2tf-6.png', '/2tf/2tf-7.png'
+    keywords: ['Professional', 'Product Design'], imgsrc: '/2tf/thumbnail.webp', hoveredsrc: '/2tf/hover.gif',
+    halfsrc: '/2tf/half.webp', imgseries: ['/2tf/2tf-1.webp', '/2tf/2tf-2.webp', '/2tf/2tf-3.webp', '/2tf/2tf-4.webp',
+      '/2tf/2tf-5.webp', '/2tf/2tf-6.webp', '/2tf/2tf-7.webp'
     ]
   }
 ]
@@ -77,9 +77,9 @@ export const artProjects = [
     timeframe: 'Mar 2022 - Aug 2025',
     tools: 'Adobe Photoshop, Adobe InDesign',
     longdesc: 'Book projects include: my highschool yearbook cover and various internal illustrations, the cover and internal layout for my poetry book, and the cover for my highschool\'s annual literary anthology.',
-    keywords: ['Illustration', 'Graphic Design'], imgsrc: '/book/thumbnail.png', hoveredsrc: '/book/hover.gif',
-    halfsrc: '/book/half.png', imgseries: ['/book/book-1.png', '/book/book-2.png', '/book/book-3.png',
-      '/book/book-4.png', '/book/book-5.png'
+    keywords: ['Illustration', 'Graphic Design'], imgsrc: '/book/thumbnail.webp', hoveredsrc: '/book/hover.gif',
+    halfsrc: '/book/half.webp', imgseries: ['/book/book-1.webp', '/book/book-2.webp', '/book/book-3.webp',
+      '/book/book-4.webp', '/book/book-5.webp'
     ]
   },
 
@@ -89,9 +89,9 @@ export const artProjects = [
     timeframe: 'Jan 2026 - Present',
     tools: 'Figma, Linocut Print, Risograph Print',
     longdesc: 'I just design posters for fun sometimes. Mostly because I need more room decor. Also includes a project for a client who needed graphics for their league team.',
-    keywords: ['Graphic Design'], imgsrc: '/graphics/thumbnail.png', hoveredsrc: '/graphics/hover.gif',
-    halfsrc: '/graphics/half.png', imgseries: ['/graphics/graphics-1.png', '/graphics/graphics-2.png',
-      '/graphics/graphics-3.png']
+    keywords: ['Graphic Design'], imgsrc: '/graphics/thumbnail.webp', hoveredsrc: '/graphics/hover.gif',
+    halfsrc: '/graphics/half.webp', imgseries: ['/graphics/graphics-1.webp', '/graphics/graphics-2.webp',
+      '/graphics/graphics-3.webp']
   },
 
   {
@@ -100,8 +100,8 @@ export const artProjects = [
     timeframe: 'Sept 2025 - Jan 2026',
     tools: 'Blender, ProCreate (for concepting)',
     longdesc: 'Rotate the models around by clicking and dragging! Scroll in and out with the middle mouse button. The image with the 2 frogs was created for Stanford\'s computer graphics class. It was chosen to be displayed on the class website\'s best work showcase out of >200 entries. View here: https://web.stanford.edu/class/cs148/showcase.html',
-    keywords: ['3D Modeling'], imgsrc: '/models/thumbnail.png', hoveredsrc: '/models/hover.gif',
-    halfsrc: '/models/half.png', imgseries: ['./models/cs124.webp']
+    keywords: ['3D Modeling'], imgsrc: '/models/thumbnail.webp', hoveredsrc: '/models/hover.gif',
+    halfsrc: '/models/half.webp', imgseries: ['./models/cs124.webp']
   },
 
   {
@@ -110,7 +110,7 @@ export const artProjects = [
     timeframe: 'May 2025 - Present',
     tools: 'ProCreate',
     longdesc: 'These are the favorite drawings I\'ve done so far while drawing my friends/random people I see as I go about life.',
-    keywords: ['Illustration'], imgsrc: 'sketches/thumbnail.png', hoveredsrc: 'sketches/hover.gif',
+    keywords: ['Illustration'], imgsrc: 'sketches/thumbnail.webp', hoveredsrc: 'sketches/hover.gif',
     halfsrc: '/sketches/half.webp', imgseries: ['/sketches/sketches-1.webp', '/sketches/sketches-2.webp',
       '/sketches/sketches-3.webp', '/sketches/sketches-4.webp', '/sketches/sketches-5.webp',
       '/sketches/sketches-6.webp', '/sketches/sketches-7.webp']
