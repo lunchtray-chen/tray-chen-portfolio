@@ -25,6 +25,7 @@
     border-radius: 6px;
     border: none;
     z-index: 100;
+    line-height: 1;
 }
 
 .close-overlay:hover {
