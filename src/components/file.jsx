@@ -10,14 +10,19 @@ function File() {
 
     return (
         <main className='main-content'>
-            {activeOverlay != null && <Overlay project={activeOverlay} setActiveOverlay={setActiveOverlay}/>}
+            {activeOverlay != null && <Overlay project={activeOverlay} setActiveOverlay={setActiveOverlay} />}
             <div className='tab-bar flex-row'>
-                <FileTab tabName="Projects" tabNum={0} activeTab={activeTab} setActiveTab={setActiveTab}/>
-                <FileTab tabName="Artworks" tabNum={1} activeTab={activeTab} setActiveTab={setActiveTab}/>
-                <FileTab tabName="About Me" tabNum={2} activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <FileTab tabName="Projects" tabNum={0} activeTab={activeTab} setActiveTab={setActiveTab} />
+                <FileTab tabName="Artworks" tabNum={1} activeTab={activeTab} setActiveTab={setActiveTab} />
+                <FileTab tabName="About Me" tabNum={2} activeTab={activeTab} setActiveTab={setActiveTab} />
             </div>
             <div className='file-content'>
-                <FilePage activeTab={activeTab} setActiveOverlay={setActiveOverlay}/>
+                <FilePage activeTab={activeTab} setActiveOverlay={setActiveOverlay} />
+            </div>
+            <div className='tab-bar flex-row' id='foot-tabs'>
+                <FileTab tabName="Projects" tabNum={0} activeTab={activeTab} setActiveTab={setActiveTab} />
+                <FileTab tabName="Artworks" tabNum={1} activeTab={activeTab} setActiveTab={setActiveTab} />
+                <FileTab tabName="About Me" tabNum={2} activeTab={activeTab} setActiveTab={setActiveTab} />
             </div>
         </main>
     )

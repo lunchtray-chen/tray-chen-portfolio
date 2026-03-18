@@ -4,7 +4,6 @@ import File from './components/file.jsx'
 import HoverImg from './components/hoverImg.jsx'
 import NavBar from './components/navbar.jsx'
 import Footer from './components/footer.jsx'
-import Keyword from './components/keyword.jsx'
 
 function App() {
   return (

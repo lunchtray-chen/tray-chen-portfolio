@@ -7,7 +7,7 @@
 .tab-bar {
   margin: 0 8vw 0 auto;
   width: 380px;
-  height: 40px;
+  height: 43px;
   gap: -10vw;
   justify-content: flex-end;
 }
@@ -22,8 +22,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding: 0 1.5vw 5px 0;
-  margin: 0 -10px -2px 0;
+  padding: 0 18px 5px 10px;
+  margin: 0 -10px -1px 0;
   cursor: pointer;
   transition: all 0.2s ease 0s;
 }
@@ -56,6 +56,14 @@
 .mid-tab {
   background-color: var(--gold3);
   z-index: 1;
+}
+
+#foot-tabs .active-tab,
+#foot-tabs .near-tab,
+#foot-tabs .mid-tab {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+  margin: -1px -10px 0px 0;
+  padding: 0 18px 10px 10px;
 }
 
 /* stuff related to the file pages */
