@@ -12,13 +12,13 @@
     border: 2px solid black;
 }
 
-.project-card > h3 {
+.project-card>h3 {
     align-self: flex-start;
     cursor: pointer;
     transition: all 0.15s ease 0s;
 }
 
-.project-card > h3:hover {
+.project-card>h3:hover {
     color: #9ca49a;
 }
 
@@ -37,6 +37,9 @@
     font-size: clamp(1.2rem, 1.3vw, 1.6rem);
     color: white;
     transition: all 0.2s ease 0s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* small hover img component */
