@@ -131,10 +131,10 @@
 
 .unselected {
   border-radius: 6px;
-  padding: 1vh 1vw;
+  padding: 0.3em 0.5em;
   width: auto;
   font-family: 'Maiden Orange', serif;
-  font-size: 1.3rem;
+  font-size: clamp(1.2rem, 1.4vw, 1.6rem);
   color: var(--indigo);
   transition: all 0.2s ease 0s;
   cursor: pointer;
