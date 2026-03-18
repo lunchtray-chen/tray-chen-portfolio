@@ -99,6 +99,10 @@
 
 /* stuff related to the about page */
 
+.about {
+  gap: 4vh;
+}
+
 .pic-zone {
   justify-content: center;
   align-items: center;
