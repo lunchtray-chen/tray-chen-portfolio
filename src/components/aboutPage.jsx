@@ -19,7 +19,7 @@ function AboutPage() {
 
     return (
         <div className='flex-col'>
-            <div className='pic-zone flex-row'>
+            <div className='pic-zone'>
                 <div className='selectbox'>
                     <h2>I am:</h2>
                     <div className='selectwords'>
@@ -37,10 +37,9 @@ function AboutPage() {
             <p>Hi! I’m Tray (they/them) and I’m a design student at Stanford who’s
                 been drawing for nearly a decade. I'm mainly a designer and artist, but 
                 I also love 3D modeling, writing, crocheting, and game development.
-                I'm a member of Stanford's Storyboard Club and Modern Music Ensemble
-                 (as a live artist/poetry reciter, unfortunately I can't play an instrument.)
-                 I'm always looking for creative opportunities, so please contact me
-                 if you have a project in mind! </p><br/>
+                I'm a member of Stanford's Storyboard Club and Modern Music Ensemble as 
+                a live artist/poetry reciter. I'm always looking for creative opportunities, 
+                so please contact me if you have a project in mind! </p><br/>
             <h3>Contact me at: gtchen2@stanford.edu</h3>
         </div>
     )

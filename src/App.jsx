@@ -11,7 +11,7 @@ function App() {
     <div className='portfolio'>
       <NavBar />
       <Logo />
-      <header className='intro flex-row'>
+      <header className='intro'>
         <div className='intro-text flex-col'>
           <h1>Tray Chen!</h1>
           <h3>Illustrator, UI/UX designer, lover of bad matcha.</h3>
