@@ -11,7 +11,7 @@ const sphereLinks = {
     'Cube017': { type: 'link', url: 'https://www.linkedin.com/in/tray-chen/' },
     'Cube018': { type: 'download', url: '/Tray Chen Design Resume.pdf' },
     'Cube019': { type: 'link', url: 'https://www.artstation.com/tray_chen' },
-    'Cube020': { type: 'mailto', url: 'mailto:gtchen2@stanford.edu' }
+    'Cube020': { type: 'link', url: 'https://github.com/lunchtray-chen' }
 }
 const sphereNames = Object.keys(sphereLinks)
 

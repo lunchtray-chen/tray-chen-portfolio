@@ -38,30 +38,29 @@ body {
 }
 
 /* Font styles */
-
 h1 {
   font-family: 'Irish Grover', serif;
-  font-size: 6rem;
+  font-size: clamp(4rem, 6vw, 7rem);
 }
 
 h2 {
   font-family: 'Maiden Orange', serif;
-  font-size: 3rem;
+  font-size: clamp(2rem, 3vw, 3.5rem);
 }
 
 h3 {
   font-family: 'Maiden Orange', serif;
-  font-size: 1.6rem;
+  font-size: clamp(1.5rem, 1.8vw, 2rem);
 }
 
 h4 {
   font-family: 'Irish Grover', serif;
-  font-size: 4rem;
+  font-size: clamp(3rem, 5vw, 4.5rem);
 }
 
 p {
   font-family: 'Zen Kurenaido', sans-serif;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
 }
 
 a {
@@ -124,3 +123,17 @@ img {
   gap: 4vh;
   text-align: right;
 }
+
+/* Media breakpoints for responsive screen sizes */
+
+/* mobile */
+@media (max-width: 480px) { }
+
+/* tablet */
+@media (max-width: 768px) { }
+
+/* small laptop */
+@media (max-width: 1024px) { }
+
+/* large desktop */
+@media (max-width: 1440px) { }

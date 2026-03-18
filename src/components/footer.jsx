@@ -51,6 +51,8 @@ function Footer() {
           <a href='https://www.linkedin.com/in/tray-chen/' target='_blank'> Linkedin </a>
            | 
           <a href='https://www.artstation.com/tray_chen' target='_blank'> Artstation </a>
+           | 
+          <a href='https://github.com/lunchtray-chen' target='_blank'> Github </a>
         </h3>
         <p>Made with React, React Three Fiber, Blender, and the power of friendship✨</p>
       </div>
