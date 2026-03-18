@@ -11,19 +11,43 @@
 }
 
 .logo img {
-    position: absolute;
-    object-fit: contain;
+  position: absolute;
+  object-fit: contain;
+}
+
+.logo-text {
+  max-width: 100px;
 }
 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.logo:hover > .logo-star {
-    animation: logo-spin infinite .7s linear;
+.logo:hover>.logo-star {
+  animation: logo-spin infinite .7s linear;
+}
+
+/* media queries */
+
+@media (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .logo-text {
+    max-width: 60px;
+  }
 }

@@ -131,12 +131,7 @@ img {
 
 /* mobile */
 @media (max-width: 480px) {
-  .logo {
-    display: none;
-  }
-  .intro {
-    background-color: #0097c5;
-  }
+
 }
 
 /* tablet */

@@ -34,7 +34,7 @@
     padding: 8px 12px;
     width: auto;
     font-family: 'Maiden Orange', serif;
-    font-size: 1.3rem;
+    font-size: clamp(1.2rem, 1.3vw, 1.6rem);
     color: white;
     transition: all 0.2s ease 0s;
 }
