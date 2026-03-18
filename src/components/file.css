@@ -162,4 +162,14 @@
     flex-direction: column-reverse;
   }
 
+  .tab-bar {
+    width: 300px;
+  }
+
+  .active-tab,
+  .near-tab,
+  .mid-tab {
+    padding: 0 10px 5px 10px;
+  }
+
 }
