@@ -5,7 +5,7 @@ import BlenderModel from './blenderModel.jsx'
 function NormalOverlay({ project, setActiveOverlay }) {
     return (
         <div className={`overlay-content flex-col ${project.type}`} onClick={e => e.stopPropagation()}>
-            <button className='close-overlay' onClick={() => setActiveOverlay(null)}><h1>X</h1></button>
+            <button className='close-overlay' onClick={() => setActiveOverlay(null)}><h3>X</h3></button>
             <div className='project-info flex-row'>
                 <div className='info-text flex-col'>
                     <h4>{project.name}</h4>
