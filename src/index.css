@@ -130,9 +130,7 @@ img {
 /* Media breakpoints for responsive screen sizes */
 
 /* mobile */
-@media (max-width: 480px) {
-
-}
+@media (max-width: 480px) {}
 
 /* tablet */
 @media (max-width: 768px) {
@@ -169,6 +167,15 @@ img {
     align-items: center;
     text-align: center;
   }
+
+  .project-card .hover-container:hover img:first-child {
+    opacity: 1;
+  }
+
+  .project-card .hover-container:hover img:last-child {
+    opacity: 0;
+  }
+
 }
 
 /* small laptop */
