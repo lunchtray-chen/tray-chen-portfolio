@@ -176,7 +176,7 @@ function NavBar() {
         <div className='navbar'>
             <Canvas camera={{ position: [0, 20, 9], fov: 30 }}>
                 <Suspense fallback={null}>
-                    <ambientLight intensity={5} color='#ffdfca' />
+                    <ambientLight intensity={6} color='#ffdfca' />
                     <directionalLight position={[10, 20, 10]} intensity={0.5} color='#fff1ea' />
                     <Model />
                 </Suspense>
