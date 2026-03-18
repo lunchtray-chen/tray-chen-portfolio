@@ -18,14 +18,16 @@ function NormalOverlay({ project, setActiveOverlay }) {
             <img src={project.imgsrc} />
 
             {project.type === 'watchtower' ? <>
+                <img src='watchtower/watch-info.webp' />
+                <video controls>
+                    <source src='./watchtower/demovid.mp4'></source>
+                </video>
                 <div className='blink-container flex-row'>
                     <img src='watchtower/langley-blink.gif' />
                     <img src='watchtower/vera-blink.gif' />
                     <img src='watchtower/samiha-blink.gif' />
                 </div>
-                <video controls>
-                    <source src='./watchtower/demovid.mp4'></source>
-                </video></> : null}
+            </> : null}
 
             {project.imgseries.map(image => (<img key={image} src={image} />))}
 

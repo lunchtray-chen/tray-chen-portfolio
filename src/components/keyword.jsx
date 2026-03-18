@@ -9,9 +9,10 @@ const keywordColors = {
     'Branding': 'var(--indigo)',
     'UI/UX': 'var(--blue)',
     'Game Dev': 'var(--cyan)',
-    'Product Design': 'var(--indigo)',
+    'Product Design': 'var(--cyan)',
     'Graphic Design': 'var(--greenblue)', 
-    'Illustration': 'var(--blue)'
+    'Illustration': 'var(--blue)', 
+    '3D Modeling': 'var(--indigo)'
 }
 
 function determineColor(keyword) {

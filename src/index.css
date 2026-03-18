@@ -10,8 +10,8 @@ html {
   --gold4: #6B4625;
   --dark-green: #303D00;
   --red: #DF3E1E;
-  --orange: #ea7507;
-  --pink: #ef434e;
+  --orange: #ea5e07;
+  --pink: #ef4357;
   --green: #747f23;
   --greenblue: #009f85;
   --cyan: #0097c5;
@@ -50,7 +50,7 @@ h2 {
 
 h3 {
   font-family: 'Maiden Orange', serif;
-  font-size: clamp(1.5rem, 1.8vw, 2rem);
+  font-size: clamp(1.5rem, 1.7vw, 2rem);
 }
 
 h4 {
@@ -60,7 +60,7 @@ h4 {
 
 p {
   font-family: 'Zen Kurenaido', sans-serif;
-  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  font-size: clamp(1rem, 1.25vw, 1.5rem);
 }
 
 a {

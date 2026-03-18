@@ -22,7 +22,7 @@ export const designProjects = [
     description: 'A sustainable hand-made fashion company.',
     timeframe: 'Jan 2026 - March 2026',
     tools: 'Figma, Adobe Photoshop, Adobe Illustrator, Risograph Printer',
-    longdesc: 'Built full branding for a sustainability-focused fashion company, from logo to branding guidelines to website frontend, combining a warm handmade feel with professional style: Cloverknots\' unique design language.',
+    longdesc: 'Independently built full branding for a sustainability-focused fashion company, from logo to branding guidelines to website frontend.',
     keywords: ['Classwork', 'UI/UX', 'Branding'], imgsrc: '/cloverknots/thumbnail.webp', hoveredsrc: '/cloverknots/home.gif',
     halfsrc: '/cloverknots/half.webp', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
       '/cloverknots/clover-3.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', '/cloverknots/clothes.gif',
@@ -36,8 +36,8 @@ export const designProjects = [
     description: 'Community of leaders shaping the future of AI.',
     timeframe: 'June 2025 - Present',
     tools: 'Figma, Google Slides',
-    longdesc: 'I produced and designed decks shown to investors/partners, leading to real conversions. Designed social media and outreach assets, event banners, and branding guidelines.',
-    keywords: ['Professional', 'Product Design'], imgsrc: '/qai/thumbnail.webp', hoveredsrc: '/qai/hover.gif',
+    longdesc: 'Produced and designed decks shown to investors/partners, leading to real conversions. Designed social media and outreach assets, event banners, and branding guidelines.',
+    keywords: ['Professional', 'Product Design', 'Branding'], imgsrc: '/qai/thumbnail.webp', hoveredsrc: '/qai/hover.gif',
     halfsrc: '/qai/half.webp', imgseries: ['/qai/qai-1.webp', '/qai/qai-2.webp', '/qai/qai-3.webp', '/qai/qai-4.webp',
       '/qai/qai-5.webp', '/qai/qai-6.webp', '/qai/qai-7.webp', '/qai/qai-8.webp', '/qai/qai-9.webp'
     ]
@@ -48,7 +48,7 @@ export const designProjects = [
     description: 'Compilation of freelance and personal graphic design projects.',
     timeframe: 'Jan 2026 - Present',
     tools: 'Figma, Linocut Print, Risograph Print',
-    longdesc: 'I just design posters for fun sometimes. Mostly because I need more room decor. Also includes a project for a client who needed graphics for their league team.',
+    longdesc: 'Compilation of individual graphic design projects, including small freelance visuals and personal poster projects.',
     keywords: ['Freelance', 'Graphic Design'], imgsrc: '/graphics/thumbnail.webp', hoveredsrc: '/graphics/hover.gif',
     halfsrc: '/graphics/half.webp', imgseries: ['/graphics/graphics-1.webp', '/graphics/graphics-2.webp',
       '/graphics/graphics-3.webp']
@@ -59,7 +59,7 @@ export const designProjects = [
     description: 'A quickly-growing community of experienced founders.',
     timeframe: 'May 2025 - Sept 2025',
     tools: 'Notion, Google Sheets, Paradigm',
-    longdesc: 'Conducted research, interviewed 5+ founders, and organized >600 entries of data to create the 2TF Notion Founder Directory, which was shipped out to the Second Time Founder community. Some information censored for member confidentiality.',
+    longdesc: 'Individually completed a full project for 2TF with tasks including: prototyping and continual refinement of design, interviewing 5+ founders, and organizing >600 entries of data to create the 2TF Notion Founder Directory, which was shipped out to the entire Second Time Founder community. Some information censored for member confidentiality.',
     keywords: ['Professional', 'Product Design'], imgsrc: '/2tf/thumbnail.webp', hoveredsrc: '/2tf/hover.gif',
     halfsrc: '/2tf/half.webp', imgseries: ['/2tf/2tf-1.webp', '/2tf/2tf-2.webp', '/2tf/2tf-3.webp', '/2tf/2tf-4.webp',
       '/2tf/2tf-5.webp', '/2tf/2tf-6.webp', '/2tf/2tf-7.webp'
@@ -73,7 +73,7 @@ export const artProjects = [
     description: 'Indie game about a spaceship crew\'s last days in space.',
     timeframe: 'June 2024 - Present',
     tools: 'Python, Adobe Photoshop, Audacity',
-    longdesc: 'I am one of the 2 devs working on Watchtower 72, with my roles being: illustrator, concept artist, gameplay programmer, and UI designer. I wanted to convey a retro space aesthetic through both the character designs and the UI.',
+    longdesc: 'As one of the 2 devs working on Watchtower 72, my roles are: gameplay programmer, UI designer, illustrator, and character designer.',
     keywords: ['Personal', 'Game Dev', 'UI/UX'], imgsrc: '/watchtower/thumbnail.webp', hoveredsrc: '/watchtower/hover.gif',
     halfsrc: '/watchtower/chiasma-logo.png', imgseries: ['watchtower/watch-1.webp', 'watchtower/watch-2.webp',
       'watchtower/watch-3.webp', 'watchtower/watch-4.webp', 'watchtower/watch-5.webp', 'watchtower/watch-6.webp',
@@ -87,8 +87,8 @@ export const artProjects = [
     description: 'Covers/internal layouts completed for various book projects.',
     timeframe: 'Mar 2022 - Aug 2025',
     tools: 'Adobe Photoshop, Adobe InDesign',
-    longdesc: 'Book projects include: my highschool yearbook cover and various internal illustrations, the cover and internal layout for my poetry book, and the cover for my highschool\'s annual literary anthology.',
-    keywords: ['Classwork', 'Illustration', 'Graphic Design'], imgsrc: '/book/thumbnail.webp', hoveredsrc: '/book/hover.gif',
+    longdesc: 'Book projects include: my highschool yearbook, my poetry book, and my highschool\'s annual literary anthology. I only illustrated the RIGHT HALF of the yearbook cover.',
+    keywords: ['Classwork', 'Personal', 'Illustration'], imgsrc: '/book/thumbnail.webp', hoveredsrc: '/book/hover.gif',
     halfsrc: '/book/half.webp', imgseries: ['/book/book-1.webp', '/book/book-2.webp', '/book/book-3.webp',
       '/book/book-4.webp', '/book/book-5.webp'
     ]
@@ -99,8 +99,8 @@ export const artProjects = [
     description: 'Models that I created in Blender!',
     timeframe: 'Sept 2025 - Jan 2026',
     tools: 'Blender, ProCreate (for concepting)',
-    longdesc: 'Rotate the models around by clicking and dragging! Scroll in and out with the middle mouse button. The image with the 2 frogs was created for Stanford\'s computer graphics class. It was chosen to be displayed on the class website\'s best work showcase out of >200 entries. View here: https://web.stanford.edu/class/cs148/showcase.html',
-    keywords: ['Personal', '3D Modeling'], imgsrc: '/models/thumbnail.webp', hoveredsrc: '/models/hover.gif',
+    longdesc: 'The image with the 2 frogs was created for Stanford\'s computer graphics class and created with Krystal Li (all other modeling projects are completed independently). It was chosen to be displayed on the class website\'s best work showcase out of >200 entries. View here: https://web.stanford.edu/class/cs148/showcase.html',
+    keywords: ['Classwork', 'Personal', '3D Modeling'], imgsrc: '/models/thumbnail.webp', hoveredsrc: '/models/hover.gif',
     halfsrc: '/models/half.webp', imgseries: ['./models/cs124.webp']
   },
 
