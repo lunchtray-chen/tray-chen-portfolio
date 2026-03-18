@@ -2,13 +2,16 @@ import './projectCard.css'
 
 const keywordColors = {
     'Professional': 'var(--red)',
-    'Branding': 'var(--green)',
+    'Freelance': 'var(--pink)',
+    'Classwork': 'var(--orange',
+    'Personal': 'var(--pink)',
+
+    'Branding': 'var(--indigo)',
     'UI/UX': 'var(--blue)',
-    'Game Dev': 'var(--red)',
-    'Concept Art': 'var(--orange)',
+    'Game Dev': 'var(--cyan)',
     'Product Design': 'var(--indigo)',
     'Graphic Design': 'var(--greenblue)', 
-    'Illustration': 'var(--red)'
+    'Illustration': 'var(--blue)'
 }
 
 function determineColor(keyword) {

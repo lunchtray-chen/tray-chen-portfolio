@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -10,10 +10,12 @@ html {
   --gold4: #6B4625;
   --dark-green: #303D00;
   --red: #DF3E1E;
-  --blue: #4E69F0;
+  --orange: #ea7507;
+  --pink: #ef434e;
   --green: #747f23;
-  --orange: #e3671f;
-  --greenblue: #03945f;
+  --greenblue: #009f85;
+  --cyan: #0097c5;
+  --blue: #4E69F0;
   --indigo: #5142d6;
   --light-gray: #E4E9FF;
   --light-blue: #B6C2FF;
@@ -106,6 +108,10 @@ img {
 .intro-text {
   gap: 3vh;
   margin-top: 7vh;
+}
+
+.intro-text .flex-row {
+  gap: 0.7vw;
 }
 
 .footer {
