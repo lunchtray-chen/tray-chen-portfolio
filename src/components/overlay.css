@@ -139,4 +139,8 @@
     .project-info .keywords {
         align-self: center;
     }
+    
+    .overlay-content {
+        max-height: 75vh;
+    }
 }
