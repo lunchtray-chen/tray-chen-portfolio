@@ -13,12 +13,12 @@ function App() {
       <header className='intro'>
         <div className='intro-text flex-col'>
           <h1>Tray Chen!</h1>
-          <h3>Illustrator, UI/UX designer, lover of bad matcha.</h3>
+          <h3>Product designer, Illustrator, making something new.</h3>
           <div className='flex-row'>
-            <div className='keyword'>Incoming @ Arcalink</div>
-            <div className='keyword'>Product Design Associate @ QAI</div>
+            <div className='keyword'>Product Design @ Artifex Tinkers</div>
+            <div className='keyword'>Graphic Design @ The Arbor</div>
           </div>
-          <p>I’m a design student studying at Stanford on how to create truly immersive and memorable visual experiences.</p>
+          <p>I’m a design student studying at Stanford on how to create truly fun and memorable visual experiences!</p>
         </div>
         <HoverImg imgsrc='/hero-img.webp' hoveredsrc='/real-me.webp' width={580} height={657} />
       </header>
