@@ -46,7 +46,7 @@ function Footer() {
         <h3>
           <a href="mailto:gtchen2@stanford.edu"> gtchen2@stanford.edu </a>
            | 
-          <a href='/Tray Chen Design Resume.pdf' download> Resume </a>
+          <a href='/Tray_Chen_Product_Design_2026.pdf' download> Resume </a>
            | 
           <a href='https://www.linkedin.com/in/tray-chen/' target='_blank'> Linkedin </a>
            | 

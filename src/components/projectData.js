@@ -18,6 +18,20 @@ after everything else in the overlay view)
 
 export const designProjects = [
   {
+      name: 'Artifex Tinkers', type: 'normal',
+      description: 'Company Making TTRPG Hardware.',
+      timeframe: 'June 2026 - Sept 2026',
+      tools: 'Figma, Clip Studio Paint, OpenAI Codex',
+      longdesc: 'so much stuff',
+      keywords: ['Professional', 'Product Design', 'UI/UX', 'Illustration'], imgsrc: '/cloverknots/thumbnail.webp', hoveredsrc: '/cloverknots/home.gif',
+      halfsrc: '/cloverknots/half.webp', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
+        '/cloverknots/clover-3.webp', '/cloverknots/scarf.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', 
+        '/cloverknots/clothes.gif', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
+        '/cloverknots/clover-7.webp'
+      ]
+    },
+
+  {
     name: 'Cloverknots', type: 'cloverknots',
     description: 'A sustainable hand-made fashion company.',
     timeframe: 'Jan 2026 - March 2026',
@@ -25,8 +39,8 @@ export const designProjects = [
     longdesc: 'Independently built full branding for a sustainability-focused fashion company, from logo to branding guidelines to website frontend.',
     keywords: ['Classwork', 'UI/UX', 'Branding'], imgsrc: '/cloverknots/thumbnail.webp', hoveredsrc: '/cloverknots/home.gif',
     halfsrc: '/cloverknots/half.webp', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
-      '/cloverknots/clover-3.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', '/cloverknots/clothes.gif',
-      '/cloverknots/scarf.webp', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
+      '/cloverknots/clover-3.webp', '/cloverknots/scarf.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', 
+      '/cloverknots/clothes.gif', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
       '/cloverknots/clover-7.webp'
     ]
   },
@@ -43,6 +57,7 @@ export const designProjects = [
     ]
   },
 
+/** ARCHIVED ENTRY --> moved to book section
   {
     name: 'Graphic Design Projects', type: 'normal',
     description: 'Compilation of freelance and personal graphic design projects.',
@@ -53,6 +68,7 @@ export const designProjects = [
     halfsrc: '/graphics/half.webp', imgseries: ['/graphics/graphics-1.webp', '/graphics/graphics-2.webp',
       '/graphics/graphics-3.webp']
   },
+ */
 
   {
     name: 'Second Time Founders', type: 'normal',
@@ -83,6 +99,18 @@ export const artProjects = [
   },
 
   {
+    name: 'Stanford Arbor Live', type: 'normal',
+    description: 'Posters designed to advertise the Arbor\'s music events.',
+    timeframe: 'April 2026 - Present',
+    tools: 'Adobe Photoshop, Figma, Procreate',
+    longdesc: 'Designed 10+ posters advertising music events, incorporating hand-drawn illustrative elements into the alternative visual tone consistent with the Arbor\'s established style.',
+    keywords: ['Professional', 'Graphic Design', 'Illustration'], imgsrc: '/graphics/arbor-1.webp', hoveredsrc: '/graphics/arbor-hover.gif',
+    halfsrc: '/graphics/arbor-logo.webp', imgseries: ['/graphics/arbor-2.webp', '/graphics/arbor-3.webp',
+      '/graphics/arbor-4.webp', '/graphics/arbor-5.webp'
+    ]
+  },
+
+  {
     name: 'Book Illustrations', type: 'normal',
     description: 'Covers/internal layouts completed for various book projects.',
     timeframe: 'Mar 2022 - Aug 2025',
@@ -90,7 +118,8 @@ export const artProjects = [
     longdesc: 'Book projects include: my highschool yearbook, my poetry book, and my highschool\'s annual literary anthology. I only illustrated the RIGHT HALF of the yearbook cover.',
     keywords: ['Classwork', 'Personal', 'Illustration'], imgsrc: '/book/thumbnail.webp', hoveredsrc: '/book/hover.gif',
     halfsrc: '/book/half.webp', imgseries: ['/book/book-1.webp', '/book/book-2.webp', '/book/book-3.webp',
-      '/book/book-4.webp', '/book/book-5.webp'
+      '/book/book-4.webp', '/book/book-5.webp', '/graphics/thumbnail.webp', '/graphics/graphics-1.webp', '/graphics/graphics-2.webp',
+      '/graphics/graphics-3.webp'
     ]
   },
 

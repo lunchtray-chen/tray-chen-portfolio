@@ -9,7 +9,7 @@ import '../index.css'
 
 const sphereLinks = {
     'Cube017': { type: 'link', url: 'https://www.linkedin.com/in/tray-chen/' },
-    'Cube018': { type: 'download', url: '/Tray Chen Design Resume.pdf' },
+    'Cube018': { type: 'download', url: '/Tray_Chen_Product_Design_2026.pdf' },
     'Cube019': { type: 'link', url: 'https://www.artstation.com/tray_chen' },
     'Cube020': { type: 'link', url: 'https://github.com/lunchtray-chen' }
 }
@@ -141,7 +141,7 @@ function Model() {
                     } else if (sphere.type === 'download') {
                         const a = document.createElement('a')
                         a.href = sphere.url
-                        a.download = 'Tray Chen Design Resume.pdf'  // filename the user sees when downloading
+                        a.download = '/Tray_Chen_Product_Design_2026.pdf'  // filename the user sees when downloading
                         a.click()
                     }
                 }
