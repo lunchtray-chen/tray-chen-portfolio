@@ -28,8 +28,8 @@ function CaterModel() {
     if (!headRef.current) return
 
     // lerp rotation toward mouse position
-    const targetX = -mouse.current.y * 0.7  // up/down
-    const targetY = mouse.current.x * 0.9   // left/right
+    const targetX = -mouse.current.y * 0.8  // up/down
+    const targetY = mouse.current.x * 1   // left/right
 
     headRef.current.rotation.x += (targetX - headRef.current.rotation.x) * 0.1
     headRef.current.rotation.y += (targetY - headRef.current.rotation.y) * 0.1

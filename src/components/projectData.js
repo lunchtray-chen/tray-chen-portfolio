@@ -18,18 +18,32 @@ after everything else in the overlay view)
 
 export const designProjects = [
   {
-      name: 'Artifex Tinkers', type: 'normal',
+      name: 'Artifex Tinkers (UI/UX)', type: 'artifex',
       description: 'Company Making TTRPG Hardware.',
       timeframe: 'June 2026 - Sept 2026',
       tools: 'Figma, Clip Studio Paint, OpenAI Codex',
       longdesc: 'so much stuff',
-      keywords: ['Professional', 'Product Design', 'UI/UX', 'Illustration'], imgsrc: '/cloverknots/thumbnail.webp', hoveredsrc: '/cloverknots/home.gif',
-      halfsrc: '/cloverknots/half.webp', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
+      keywords: ['Professional', 'Product Design', 'UI/UX'], imgsrc: '/artifex/uiux/thumbnail.webp', hoveredsrc: '/artifex/uiux/hover.gif',
+      halfsrc: '/artifex/half.svg', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
         '/cloverknots/clover-3.webp', '/cloverknots/scarf.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', 
         '/cloverknots/clothes.gif', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
         '/cloverknots/clover-7.webp'
       ]
     },
+
+  {
+    name: 'Artifex Tinkers (Physical Design)', type: 'artifex',
+    description: 'Company Making TTRPG Hardware.',
+    timeframe: 'June 2026 - Sept 2026',
+    tools: 'Figma, Clip Studio Paint, Sketchbook',
+    longdesc: 'so much stuff',
+    keywords: ['Professional', 'Product Design', 'Physical Design'], imgsrc: '/artifex/physical/thumbnail.webp', hoveredsrc: '/artifex/physical/hover.gif',
+    halfsrc: '/artifex/half.svg', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
+      '/cloverknots/clover-3.webp', '/cloverknots/scarf.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', 
+      '/cloverknots/clothes.gif', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
+      '/cloverknots/clover-7.webp'
+    ]
+  },
 
   {
     name: 'Cloverknots', type: 'cloverknots',
@@ -84,6 +98,20 @@ export const designProjects = [
 ]
 
 export const artProjects = [
+  {
+    name: 'Artifex Tinkers (Illustration & Art Direction)', type: 'artifex',
+    description: 'Company Making TTRPG Hardware.',
+    timeframe: 'June 2026 - Sept 2026',
+    tools: 'Clip Studio Paint, Sketchbook',
+    longdesc: 'Illustration yuh',
+    keywords: ['Professional', 'Art Direction', 'Illustration'], imgsrc: '/artifex/illustration/thumbnail.webp', hoveredsrc: '/artifex/illustration/hover.gif',
+    halfsrc: '/artifex/half.svg', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
+      '/cloverknots/clover-3.webp', '/cloverknots/scarf.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', 
+      '/cloverknots/clothes.gif', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
+      '/cloverknots/clover-7.webp'
+    ]
+  },
+
   {
     name: 'Watchtower 72', type: 'watchtower',
     description: 'Indie game about a spaceship crew\'s last days in space.',

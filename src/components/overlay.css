@@ -113,6 +113,14 @@
     border: 8px solid rgb(8, 8, 15);
 }
 
+.artifex {
+    scrollbar-color: rgb(218, 76, 0) rgb(107, 92, 87);
+    background-image: url("/artifex/bg.png");
+    background-color: rgb(24, 22, 22);
+    border: 8px solid rgb(63, 15, 4);
+    color: rgb(255, 215, 113);
+}
+
 .models .model,
 .models Canvas {
     border-radius: 12px;
