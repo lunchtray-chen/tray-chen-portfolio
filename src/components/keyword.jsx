@@ -3,7 +3,7 @@ import './projectCard.css'
 const keywordColors = {
     'Professional': 'var(--red)',
     'Freelance': 'var(--pink)',
-    'Classwork': 'var(--orange',
+    'Classwork': 'var(--orange)',
     'Personal': 'var(--pink)',
 
     'Branding': 'var(--indigo)',
