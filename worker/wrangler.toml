@@ -1,0 +1,21 @@
+name = "traychen-gate"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+# Private bucket holding the protected Artifex images. No public access is configured
+# on this bucket — the Worker is the only way in.
+[[r2_buckets]]
+binding = "ASSETS"
+bucket_name = "traychen-private"
+
+# Per-IP unlock attempt counters. Create with:
+#   npx wrangler kv namespace create RATE
+# then paste the printed id below.
+[[kv_namespaces]]
+binding = "RATE"
+id = "41f9a22de8e640beb5d87945629fa2dd"
+
+# Secrets (never in this file — set with `npx wrangler secret put <NAME>`):
+#   PASSWORD_HASH   hex PBKDF2 hash of the shared password
+#   PASSWORD_SALT   hex salt used to derive it
+#   TOKEN_SECRET    random string used to sign unlock tokens
