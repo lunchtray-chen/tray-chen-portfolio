@@ -25,14 +25,14 @@ overlay asks the Worker for. See worker/README.md.
 
 export const designProjects = [
   {
-    name: 'Artifex Tinkers (UI/UX)', type: 'artifex',
+    name: '🔒 Artifex Tinkers (UI/UX)', type: 'artifex',
     description: 'Company Making TTRPG Hardware.',
     keywords: ['Professional', 'Product Design', 'UI/UX'], imgsrc: '/artifex/uiux/thumbnail.webp', hoveredsrc: '/artifex/uiux/hover.gif',
     locked: true, slug: 'artifex-uiux'
   },
 
   {
-    name: 'Artifex Tinkers (Physical Design)', type: 'artifex',
+    name: '🔒 Artifex Tinkers (Physical Design)', type: 'artifex',
     description: 'Company Making TTRPG Hardware.',
     keywords: ['Professional', 'Product Design', 'Physical Design'], imgsrc: '/artifex/physical/thumbnail.webp', hoveredsrc: '/artifex/physical/hover.gif',
     locked: true, slug: 'artifex-physical'
@@ -92,7 +92,7 @@ export const designProjects = [
 
 export const artProjects = [
   {
-    name: 'Artifex Tinkers (Illustration & Art Direction)', type: 'artifex',
+    name: '🔒 Artifex Tinkers (Illustration & Art Direction)', type: 'artifex',
     description: 'Company Making TTRPG Hardware.',
     keywords: ['Professional', 'Art Direction', 'Illustration'], imgsrc: '/artifex/illustration/thumbnail.webp', hoveredsrc: '/artifex/illustration/hover.gif',
     locked: true, slug: 'artifex-illustration'

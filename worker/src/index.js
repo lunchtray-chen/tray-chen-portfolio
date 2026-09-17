@@ -12,12 +12,21 @@
 
 /* ---------- config ---------- */
 
-const ALLOWED_ORIGINS = [
-  'https://traychen.com',
-  'https://www.traychen.com',
-  'http://localhost:5173',
-  'http://127.0.0.1:5173',
-]
+const ALLOWED_ORIGINS = ['https://traychen.com', 'https://www.traychen.com']
+
+/*
+ * Any localhost port, because Vite hops to 5174, 5175... whenever 5173 is taken.
+ *
+ * Safe to allow in production: CORS only governs what a *browser* lets one page read
+ * from another origin, and it stops nobody using curl. Since the unlock token lives in
+ * localStorage rather than a cookie, a page on someone's localhost has no credentials of
+ * a visitor's to borrow. Every route still demands the password or a valid token.
+ */
+const LOCALHOST_ORIGIN = /^http:\/\/(localhost|127\.0\.0\.1):\d+$/
+
+function originAllowed(origin) {
+  return ALLOWED_ORIGINS.includes(origin) || LOCALHOST_ORIGIN.test(origin)
+}
 
 const TOKEN_TTL_SECONDS = 7 * 24 * 60 * 60 // 7 days
 
@@ -50,7 +59,7 @@ const PROTECTED_PROJECTS = {
     tools: 'Figma, Clip Studio Paint, OpenAI Codex',
     longdesc: 'so much stuff',
     imgsrc: 'artifex/uiux/hero.webp',
-    halfsrc: 'artifex/uiux/half.webp',
+    halfsrc: 'artifex/half.svg',
     imgseries: [
       'artifex/uiux/01.webp',
       'artifex/uiux/02.webp',
@@ -63,7 +72,7 @@ const PROTECTED_PROJECTS = {
     tools: 'Figma, Clip Studio Paint, Sketchbook',
     longdesc: 'so much stuff',
     imgsrc: 'artifex/physical/hero.webp',
-    halfsrc: 'artifex/physical/half.webp',
+    halfsrc: 'aartifex/half.svg',
     imgseries: [
       'artifex/physical/01.webp',
       'artifex/physical/02.webp',
@@ -76,7 +85,7 @@ const PROTECTED_PROJECTS = {
     tools: 'Clip Studio Paint, Sketchbook',
     longdesc: 'Illustration yuh',
     imgsrc: 'artifex/illustration/hero.webp',
-    halfsrc: 'artifex/illustration/half.webp',
+    halfsrc: 'artifex/half.svg',
     imgseries: [
       'artifex/illustration/01.webp',
       'artifex/illustration/02.webp',
@@ -112,7 +121,7 @@ function corsHeaders(request) {
     'Access-Control-Max-Age': '86400',
     Vary: 'Origin',
   }
-  if (origin && ALLOWED_ORIGINS.includes(origin)) {
+  if (origin && originAllowed(origin)) {
     headers['Access-Control-Allow-Origin'] = origin
   }
   return headers

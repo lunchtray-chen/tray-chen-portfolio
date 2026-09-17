@@ -72,6 +72,11 @@ cd worker && npm run dev          # the API, on http://localhost:8787
 npm run dev                       # the site, on http://localhost:5173
 ```
 
+Vite hops to 5174, 5175... if 5173 is already taken by an older run, and prints the port
+it actually chose — any localhost port is accepted by the Worker. If you'd rather reclaim
+5173, kill the stale process with `lsof -ti:5173 | xargs kill`. Same trick for
+`Address already in use (127.0.0.1:8787)`, which just means a Worker is already running.
+
 Put `VITE_API_BASE=http://localhost:8787` in a `.env.local` at the repo root (already
 gitignored via `*.local`).
 

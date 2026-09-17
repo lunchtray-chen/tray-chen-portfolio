@@ -7,6 +7,11 @@ function errorMessage(error) {
         if (error.status === 401) return 'That password isn\'t right — try again?'
         if (error.status === 429) return 'Too many tries. Give it an hour and come back!'
     }
+    // fetch throws the same TypeError for a dead server and a CORS rejection, so the
+    // dev hint has to cover both
+    if (import.meta.env.DEV) {
+        return 'Couldn\'t reach the gate Worker. Is `npm run dev` running in worker/, and is this page\'s origin allowed in ALLOWED_ORIGINS?'
+    }
     return 'Couldn\'t reach the server. Check your connection and try again.'
 }
 
