@@ -5,8 +5,15 @@ import { useEffect } from 'react'
 
 function Overlay({project, setActiveOverlay}) {
     useEffect(() => {
+        // hiding the scrollbar widens the page, which slides the right-anchored layout
+        // sideways — replace its width with padding so nothing moves
+        const scrollbar = window.innerWidth - document.documentElement.clientWidth
         document.body.style.overflow = 'hidden'
-        return () => { document.body.style.overflow = 'auto' }
+        document.body.style.paddingRight = `${scrollbar}px`
+        return () => {
+            document.body.style.overflow = 'auto'
+            document.body.style.paddingRight = ''
+        }
     }, [])
 
     return (
