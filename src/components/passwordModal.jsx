@@ -4,8 +4,8 @@ import './passwordModal.css'
 
 function errorMessage(error) {
     if (error instanceof ApiError) {
-        if (error.status === 401) return 'That password isn\'t right — try again?'
-        if (error.status === 429) return 'Too many tries. Give it an hour and come back!'
+        if (error.status === 401) return 'Wrong password.'
+        if (error.status === 429) return 'Too many tries. Come back in an hour!'
     }
     // fetch throws the same TypeError for a dead server and a CORS rejection, so the
     // dev hint has to cover both
@@ -45,9 +45,8 @@ function PasswordModal({ project, unlock, setActiveOverlay }) {
                 <h3>X</h3>
             </button>
 
-            <h2>This one&rsquo;s locked!</h2>
-            <p><strong>{project.name}</strong> is client work under NDA, so it needs a password.
-                Email me at gtchen2@stanford.edu and I&rsquo;ll send you one.</p>
+            <h2>NDA work ahead!</h2>
+            <p><strong>{project.name}</strong> needs a password to view. Email me at gtchen2@stanford.edu and I&rsquo;ll send it to you.</p>
 
             <form className='password-form flex-row' onSubmit={onSubmit}>
                 <input
