@@ -5,7 +5,9 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  // .wrangler holds generated worker build output; worker/src runs on Cloudflare, not in
+  // the browser, so the browser-globals config below doesn't apply to it
+  globalIgnores(['dist', '**/.wrangler', 'worker']),
   {
     files: ['**/*.{js,jsx}'],
     extends: [

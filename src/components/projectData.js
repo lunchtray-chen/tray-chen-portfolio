@@ -12,37 +12,30 @@
 - hoversrc (GIF that appears once hovered over, 
 ALSO the "hero img" people see when they click into the project)
 - halfsrc (the half-img in the overlay project info section)
-- imgseries (ARRAY OF SRCs: the series of images that appear 
+- imgseries (ARRAY OF SRCs: the series of images that appear
 after everything else in the overlay view)
+
+PASSWORD-PROTECTED ENTRIES
+Entries with `locked: true` only keep their public half here (the card: name, type,
+description, keywords, imgsrc, hoveredsrc). The gated half — timeframe, tools, longdesc,
+halfsrc and imgseries — lives in PROTECTED_PROJECTS in worker/src/index.js and is only
+served after the password is entered, so it never ships in the bundle. `slug` is what the
+overlay asks the Worker for. See worker/README.md.
 */
 
 export const designProjects = [
   {
-      name: 'Artifex Tinkers (UI/UX)', type: 'artifex',
-      description: 'Company Making TTRPG Hardware.',
-      timeframe: 'June 2026 - Sept 2026',
-      tools: 'Figma, Clip Studio Paint, OpenAI Codex',
-      longdesc: 'so much stuff',
-      keywords: ['Professional', 'Product Design', 'UI/UX'], imgsrc: '/artifex/uiux/thumbnail.webp', hoveredsrc: '/artifex/uiux/hover.gif',
-      halfsrc: '/artifex/half.svg', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
-        '/cloverknots/clover-3.webp', '/cloverknots/scarf.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', 
-        '/cloverknots/clothes.gif', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
-        '/cloverknots/clover-7.webp'
-      ]
-    },
+    name: 'Artifex Tinkers (UI/UX)', type: 'artifex',
+    description: 'Company Making TTRPG Hardware.',
+    keywords: ['Professional', 'Product Design', 'UI/UX'], imgsrc: '/artifex/uiux/thumbnail.webp', hoveredsrc: '/artifex/uiux/hover.gif',
+    locked: true, slug: 'artifex-uiux'
+  },
 
   {
     name: 'Artifex Tinkers (Physical Design)', type: 'artifex',
     description: 'Company Making TTRPG Hardware.',
-    timeframe: 'June 2026 - Sept 2026',
-    tools: 'Figma, Clip Studio Paint, Sketchbook',
-    longdesc: 'so much stuff',
     keywords: ['Professional', 'Product Design', 'Physical Design'], imgsrc: '/artifex/physical/thumbnail.webp', hoveredsrc: '/artifex/physical/hover.gif',
-    halfsrc: '/artifex/half.svg', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
-      '/cloverknots/clover-3.webp', '/cloverknots/scarf.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', 
-      '/cloverknots/clothes.gif', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
-      '/cloverknots/clover-7.webp'
-    ]
+    locked: true, slug: 'artifex-physical'
   },
 
   {
@@ -101,15 +94,8 @@ export const artProjects = [
   {
     name: 'Artifex Tinkers (Illustration & Art Direction)', type: 'artifex',
     description: 'Company Making TTRPG Hardware.',
-    timeframe: 'June 2026 - Sept 2026',
-    tools: 'Clip Studio Paint, Sketchbook',
-    longdesc: 'Illustration yuh',
     keywords: ['Professional', 'Art Direction', 'Illustration'], imgsrc: '/artifex/illustration/thumbnail.webp', hoveredsrc: '/artifex/illustration/hover.gif',
-    halfsrc: '/artifex/half.svg', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
-      '/cloverknots/clover-3.webp', '/cloverknots/scarf.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', 
-      '/cloverknots/clothes.gif', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
-      '/cloverknots/clover-7.webp'
-    ]
+    locked: true, slug: 'artifex-illustration'
   },
 
   {

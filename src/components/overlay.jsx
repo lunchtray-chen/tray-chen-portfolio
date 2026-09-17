@@ -1,4 +1,5 @@
 import NormalOverlay from './normalOverlay.jsx'
+import LockedOverlay from './lockedOverlay.jsx'
 import './overlay.css'
 import { useEffect } from 'react'
 
@@ -10,7 +11,9 @@ function Overlay({project, setActiveOverlay}) {
 
     return (
         <div className='overlay-bg' onClick={() => setActiveOverlay(null)}>
-            <NormalOverlay project={project} setActiveOverlay={setActiveOverlay}/>
+            {project.locked
+                ? <LockedOverlay project={project} setActiveOverlay={setActiveOverlay}/>
+                : <NormalOverlay project={project} setActiveOverlay={setActiveOverlay}/>}
         </div>
     )
 }

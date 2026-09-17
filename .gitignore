@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# originals of the password-protected images — these live in R2, never in the repo
+private-assets
+# wrangler state + local worker secrets
+.wrangler
+worker/.dev.vars
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
