@@ -59,7 +59,7 @@ const PROTECTED_PROJECTS = {
     tools: 'Figma, Clip Studio Paint, OpenAI Codex',
     longdesc: 'so much stuff',
     imgsrc: 'artifex/uiux/hero.webp',
-    halfsrc: 'artifex/half.svg',
+    halfsrc: 'artifex/half.webp',
     imgseries: [
       'artifex/uiux/01.webp',
       'artifex/uiux/02.webp',
@@ -72,7 +72,7 @@ const PROTECTED_PROJECTS = {
     tools: 'Figma, Clip Studio Paint, Sketchbook',
     longdesc: 'so much stuff',
     imgsrc: 'artifex/physical/hero.webp',
-    halfsrc: 'artifex/half.svg',
+    halfsrc: 'artifex/half.webp',
     imgseries: [
       'artifex/physical/01.webp',
       'artifex/physical/02.webp',
@@ -85,7 +85,7 @@ const PROTECTED_PROJECTS = {
     tools: 'Clip Studio Paint, Sketchbook',
     longdesc: 'Illustration yuh',
     imgsrc: 'artifex/illustration/hero.webp',
-    halfsrc: 'artifex/half.svg',
+    halfsrc: 'artifex/half.webp',
     imgseries: [
       'artifex/illustration/01.webp',
       'artifex/illustration/02.webp',
