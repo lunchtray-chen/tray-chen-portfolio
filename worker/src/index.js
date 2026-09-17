@@ -72,7 +72,7 @@ const PROTECTED_PROJECTS = {
     tools: 'Figma, Clip Studio Paint, Sketchbook',
     longdesc: 'so much stuff',
     imgsrc: 'artifex/physical/hero.webp',
-    halfsrc: 'aartifex/half.svg',
+    halfsrc: 'artifex/half.svg',
     imgseries: [
       'artifex/physical/01.webp',
       'artifex/physical/02.webp',
