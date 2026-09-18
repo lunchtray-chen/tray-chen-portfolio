@@ -61,6 +61,7 @@ const PROTECTED_PROJECTS = {
     imgsrc: 'artifex/uiux/hero.webp',
     halfsrc: 'artifex/half.webp',
     imgseries: [
+      'artifex/uiux/overview.webp',
       'artifex/uiux/01.webp',
       'artifex/uiux/02.webp',
       'artifex/uiux/03.webp',
@@ -74,6 +75,7 @@ const PROTECTED_PROJECTS = {
     imgsrc: 'artifex/physical/hero.webp',
     halfsrc: 'artifex/half.webp',
     imgseries: [
+      'artifex/uiux/overview.webp',
       'artifex/physical/01.webp',
       'artifex/physical/02.webp',
       'artifex/physical/03.webp',
@@ -87,6 +89,7 @@ const PROTECTED_PROJECTS = {
     imgsrc: 'artifex/illustration/hero.webp',
     halfsrc: 'artifex/half.webp',
     imgseries: [
+      'artifex/uiux/overview.webp',
       'artifex/illustration/01.webp',
       'artifex/illustration/02.webp',
       'artifex/illustration/03.webp',
