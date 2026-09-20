@@ -56,7 +56,7 @@ const PBKDF2_ITERATIONS = 20000
 const PROTECTED_PROJECTS = {
   'artifex-uiux': {
     timeframe: 'June 2026 - Sept 2026',
-    tools: 'Figma, Clip Studio Paint, OpenAI Codex',
+    tools: 'Figma, Clip Studio Paint, Blender, OpenAI Codex',
     longdesc: 'so much stuff',
     imgsrc: 'artifex/uiux/hero.webp',
     halfsrc: 'artifex/half.webp',
@@ -70,8 +70,8 @@ const PROTECTED_PROJECTS = {
 
   'artifex-physical': {
     timeframe: 'June 2026 - Sept 2026',
-    tools: 'Figma, Clip Studio Paint, Sketchbook',
-    longdesc: 'so much stuff',
+    tools: 'Figma, Clip Studio Paint',
+    longdesc: 'I was the sole 2D designer for the outer casing of both the LCD and ePaper products. I worked under a creative director and often communicated to the 3D modeler and engineering team for production concerns, adjusting my designs accordingly.',
     imgsrc: 'artifex/physical/hero.webp',
     halfsrc: 'artifex/half.webp',
     imgseries: [
@@ -84,8 +84,8 @@ const PROTECTED_PROJECTS = {
 
   'artifex-illustration': {
     timeframe: 'June 2026 - Sept 2026',
-    tools: 'Clip Studio Paint, Sketchbook',
-    longdesc: 'Illustration yuh',
+    tools: 'Clip Studio Paint',
+    longdesc: 'All illustrations and drawings created by me while following the guidelines laid out by my creative director. Refined illustrations were drawn for the LCD product, while the art direction work was drawn for the ePaper product.',
     imgsrc: 'artifex/illustration/hero.webp',
     halfsrc: 'artifex/half.webp',
     imgseries: [
@@ -93,6 +93,10 @@ const PROTECTED_PROJECTS = {
       'artifex/illustration/01.webp',
       'artifex/illustration/02.webp',
       'artifex/illustration/03.webp',
+      'artifex/illustration/04.webp',
+      'artifex/illustration/05.webp',
+      'artifex/illustration/06.webp',
+      'artifex/illustration/07.webp',
     ],
   },
 }
