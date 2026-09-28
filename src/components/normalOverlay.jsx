@@ -2,13 +2,15 @@ import './overlay.css'
 import Keyword from './keyword'
 import BlenderModel from './blenderModel.jsx'
 import ProtectedImg from './protectedImg.jsx'
+import LoopVideo from './loopVideo.jsx'
+import { isVideo } from './media'
 
 /* Locked projects hold R2 keys instead of public paths, so their images go through the
-   gate. Everything else renders a plain <img> exactly as before. */
+   gate. Everything else renders a plain <img>, or a looping video for .webm/.mp4. */
 function overlayImg(project, token, src, className) {
-    return project.locked
-        ? <ProtectedImg key={src} assetKey={src} token={token} className={className} />
-        : <img key={src} src={src} className={className} />
+    if (project.locked) return <ProtectedImg key={src} assetKey={src} token={token} className={className} />
+    if (isVideo(src)) return <LoopVideo key={src} src={src} className={className} />
+    return <img key={src} src={src} className={className} />
 }
 
 function NormalOverlay({ project, setActiveOverlay, token }) {

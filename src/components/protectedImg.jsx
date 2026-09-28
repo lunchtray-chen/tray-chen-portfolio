@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import { fetchAsset } from './api'
+import { isVideo } from './media'
+import LoopVideo from './loopVideo.jsx'
 import './passwordModal.css'
 
 /*
- * Renders an image that only exists behind the password gate. Fetched with the token in
+ * Renders an image (or looping video) that only exists behind the password gate. Fetched with the token in
  * an Authorization header and displayed from a blob: URL, so the image never has a
  * public address and the token never lands in one.
  */
@@ -34,6 +36,7 @@ function ProtectedImg({ assetKey, token, className }) {
 
     if (!current) return <div className={`protected-img-placeholder loading ${className || ''}`} />
     if (current.failed) return <div className={`protected-img-placeholder ${className || ''}`} />
+    if (isVideo(assetKey)) return <LoopVideo src={current.url} className={className} />
     return <img src={current.url} className={className} />
 }
 

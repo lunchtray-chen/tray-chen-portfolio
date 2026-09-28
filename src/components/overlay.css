@@ -64,7 +64,8 @@
     object-fit: cover;
 }
 
-.overlay-content img:not(.half-img) {
+.overlay-content img:not(.half-img),
+.overlay-content .loop-video:not(.half-img) {
     border-radius: 12px;
     border: 2px solid black;
 }
