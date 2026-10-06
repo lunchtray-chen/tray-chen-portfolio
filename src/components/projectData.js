@@ -26,14 +26,14 @@ overlay asks the Worker for. See worker/README.md.
 export const designProjects = [
   {
     name: '🔒 Artifex Tinkers (UI/UX)', type: 'artifex',
-    description: 'Company Making TTRPG Hardware.',
+    description: 'Redesigning flows and interfaces to feel like magic.',
     keywords: ['Professional', 'Product Design', 'UI/UX'], imgsrc: '/artifex/uiux/thumbnail.webp', hoveredsrc: '/artifex/uiux/hover.gif',
     locked: true, slug: 'artifex-uiux'
   },
 
   {
     name: '🔒 Artifex Tinkers (Physical Design)', type: 'artifex',
-    description: 'Company Making TTRPG Hardware.',
+    description: 'Designing the fantastical outer shells of TTRPG Hardware.',
     keywords: ['Professional', 'Product Design', 'Physical Design'], imgsrc: '/artifex/physical/thumbnail.webp', hoveredsrc: '/artifex/physical/hover.gif',
     locked: true, slug: 'artifex-physical'
   },
@@ -93,7 +93,7 @@ export const designProjects = [
 export const artProjects = [
   {
     name: '🔒 Artifex Tinkers (Illustration & Art Direction)', type: 'artifex',
-    description: 'Company Making TTRPG Hardware.',
+    description: 'Marketing illustrations that show off hardware screen capabilities.',
     keywords: ['Professional', 'Art Direction', 'Illustration'], imgsrc: '/artifex/illustration/thumbnail.webp', hoveredsrc: '/artifex/illustration/hover.gif',
     locked: true, slug: 'artifex-illustration'
   },
@@ -120,7 +120,7 @@ export const artProjects = [
     longdesc: 'Designed 10+ posters advertising music events, incorporating hand-drawn illustrative elements into the alternative visual tone consistent with the Arbor\'s established style.',
     keywords: ['Professional', 'Graphic Design', 'Illustration'], imgsrc: '/graphics/arbor-1.webp', hoveredsrc: '/graphics/arbor-hover.gif',
     halfsrc: '/graphics/arbor-logo.webp', imgseries: ['/graphics/arbor-2.webp', '/graphics/arbor-3.webp',
-      '/graphics/arbor-4.webp', '/graphics/arbor-5.webp'
+      '/graphics/arbor-4.webp', '/graphics/arbor-5.webp', '/graphics/arbor-6.webp', '/graphics/arbor-7.webp', 
     ]
   },
 
