@@ -54,7 +54,7 @@ export const designProjects = [
 
   {
     name: 'Quantum AI Institute', type: 'quantum',
-    description: 'Branding and research for a community of leaders shaping the future of AI.',
+    description: 'Branding/research for community of leaders shaping the future of AI.',
     timeframe: 'June 2025 - Present',
     tools: 'Figma, Google Slides',
     longdesc: 'Produced and designed decks shown to investors/partners, leading to real conversions. Designed social media and outreach assets, event banners, and branding guidelines.',
@@ -79,7 +79,7 @@ export const designProjects = [
 
   {
     name: 'Second Time Founders', type: 'normal',
-    description: 'Designing internal tools for a quickly-growing community of experienced founders.',
+    description: 'Designing internal tools for community of experienced founders.',
     timeframe: 'May 2025 - Sept 2025',
     tools: 'Notion, Google Sheets, Paradigm',
     longdesc: 'Individually completed a full project for 2TF with tasks including: prototyping and continual refinement of design, interviewing 5+ founders, and organizing >600 entries of data to create the 2TF Notion Founder Directory, which was shipped out to the entire Second Time Founder community. Some information censored for member confidentiality.',
