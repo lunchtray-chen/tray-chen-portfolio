@@ -40,7 +40,7 @@ export const designProjects = [
 
   {
     name: 'Cloverknots', type: 'cloverknots',
-    description: 'A sustainable hand-made fashion company.',
+    description: 'Branding and UI/UX for a sustainable hand-made fashion company.',
     timeframe: 'Jan 2026 - March 2026',
     tools: 'Figma, Adobe Photoshop, Adobe Illustrator, Risograph Printer',
     longdesc: 'Independently built full branding for a sustainability-focused fashion company, from logo to branding guidelines to website frontend.',
@@ -54,7 +54,7 @@ export const designProjects = [
 
   {
     name: 'Quantum AI Institute', type: 'quantum',
-    description: 'Community of leaders shaping the future of AI.',
+    description: 'Branding and research for a community of leaders shaping the future of AI.',
     timeframe: 'June 2025 - Present',
     tools: 'Figma, Google Slides',
     longdesc: 'Produced and designed decks shown to investors/partners, leading to real conversions. Designed social media and outreach assets, event banners, and branding guidelines.',
@@ -79,7 +79,7 @@ export const designProjects = [
 
   {
     name: 'Second Time Founders', type: 'normal',
-    description: 'A quickly-growing community of experienced founders.',
+    description: 'Designing internal tools for a quickly-growing community of experienced founders.',
     timeframe: 'May 2025 - Sept 2025',
     tools: 'Notion, Google Sheets, Paradigm',
     longdesc: 'Individually completed a full project for 2TF with tasks including: prototyping and continual refinement of design, interviewing 5+ founders, and organizing >600 entries of data to create the 2TF Notion Founder Directory, which was shipped out to the entire Second Time Founder community. Some information censored for member confidentiality.',
