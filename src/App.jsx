@@ -14,8 +14,8 @@ function App() {
         <div className='intro-text flex-col'>
           <h1>Tray Chen!</h1>
           <div className='flex-row'>
-            <div className='keyword'>Product Design @ Artifex Tinkers</div>
             <div className='keyword'>Graphic Design @ The Arbor</div>
+            <div className='keyword'>Formerly Product Design @ Artifex Tinkers</div>
           </div>
           <p>I'm a Stanford design student assembling truly fun and interactive visual experiences!</p>
         </div>

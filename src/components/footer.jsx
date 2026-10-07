@@ -56,7 +56,7 @@ function Footer() {
         </h3>
         <p>Made with React, React Three Fiber, Blender, and the power of friendship✨</p>
       </div>
-      <Canvas
+      {/*<Canvas
         camera={{ position: [0, -0.4191, 3.5], fov: 45 }}
         style={{ width: '100%', height: '40vh' }}
       >
@@ -65,7 +65,7 @@ function Footer() {
           <directionalLight position={[10, 10, 5]} intensity={5} color='#ffefe5' />
           <CaterModel />
         </Suspense>
-      </Canvas>
+      </Canvas>*/}
     </div>
   )
 }
