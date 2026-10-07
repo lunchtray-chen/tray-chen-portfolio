@@ -57,7 +57,7 @@ export const designProjects = [
     description: 'Branding/research for community of leaders shaping the future of AI.',
     timeframe: 'June 2025 - Present',
     tools: 'Figma, Google Slides',
-    longdesc: 'Produced and designed decks shown to investors/partners, leading to real conversions. Designed social media and outreach assets, event banners, and branding guidelines.',
+    longdesc: 'Quantum AI Institute is a platform that supports AI founders, investors, and ecosystem leaders navigating the AI era through network and capital-aligned growth. Designed decks shown to investors/partners, social media and outreach assets, event banners, and branding guidelines.',
     keywords: ['Professional', 'Product Design', 'Branding'], imgsrc: '/qai/thumbnail.webp', hoveredsrc: '/qai/hover.gif',
     halfsrc: '/qai/half.webp', imgseries: ['/qai/qai-1.webp', '/qai/qai-2.webp', '/qai/qai-3.webp', '/qai/qai-4.webp',
       '/qai/qai-5.webp', '/qai/qai-6.webp', '/qai/qai-7.webp', '/qai/qai-8.webp', '/qai/qai-9.webp'
@@ -82,7 +82,7 @@ export const designProjects = [
     description: 'Designing internal tools for community of experienced founders.',
     timeframe: 'May 2025 - Sept 2025',
     tools: 'Notion, Google Sheets, Paradigm',
-    longdesc: 'Individually completed a full project for 2TF with tasks including: prototyping and continual refinement of design, interviewing 5+ founders, and organizing >600 entries of data to create the 2TF Notion Founder Directory, which was shipped out to the entire Second Time Founder community. Some information censored for member confidentiality.',
+    longdesc: 'Second Time Founders is a network of seasoned founders improving the world through conscious leadership. Individually completed the project 2TF Notion Founder Directory. Some information censored for member confidentiality.',
     keywords: ['Professional', 'Product Design'], imgsrc: '/2tf/thumbnail.webp', hoveredsrc: '/2tf/hover.gif',
     halfsrc: '/2tf/half.webp', imgseries: ['/2tf/2tf-1.webp', '/2tf/2tf-2.webp', '/2tf/2tf-3.webp', '/2tf/2tf-4.webp',
       '/2tf/2tf-5.webp', '/2tf/2tf-6.webp', '/2tf/2tf-7.webp'
@@ -117,7 +117,7 @@ export const artProjects = [
     description: 'Posters designed to advertise the Arbor\'s music events.',
     timeframe: 'April 2026 - Present',
     tools: 'Adobe Photoshop, Figma, Procreate',
-    longdesc: 'Designed 10+ posters advertising music events, incorporating hand-drawn illustrative elements into the alternative visual tone consistent with the Arbor\'s established style.',
+    longdesc: 'Stanford\'s only student-run live event production company. Designed 10+ posters advertising music events, incorporating hand-drawn illustrative elements into the alternative visual tone consistent with the Arbor\'s established style.',
     keywords: ['Professional', 'Graphic Design', 'Illustration'], imgsrc: '/graphics/arbor-1.webp', hoveredsrc: '/graphics/arbor-hover.gif',
     halfsrc: '/graphics/arbor-logo.webp', imgseries: ['/graphics/arbor-2.webp', '/graphics/arbor-3.webp',
       '/graphics/arbor-4.webp', '/graphics/arbor-5.webp', '/graphics/arbor-6.webp', '/graphics/arbor-7.webp', 
