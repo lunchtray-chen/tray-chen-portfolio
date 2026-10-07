@@ -13,11 +13,13 @@ function App() {
       <header className='intro'>
         <div className='intro-text flex-col'>
           <h1>Tray Chen!</h1>
-          <div className='flex-row'>
+          {/*<div className='flex-row'>
             <div className='keyword'>Graphic Design @ The Arbor</div>
             <div className='keyword'>Formerly Product Design @ Artifex Tinkers</div>
-          </div>
-          <p>I'm a Stanford design student assembling truly fun and interactive visual experiences!</p>
+          </div>*/}
+          <p>I'm a Stanford design student assembling truly fun and interactive visual experiences! 
+            Currently working for Stanford's Arbor Live; previously a designer at Artifex Tinkers.</p>
+          <p>I'm currently looking for product design, illustration, and UI/UX roles. Let's chat!</p>
         </div>
         <HoverImg imgsrc='/hero-img.webp' hoveredsrc='/real-me.webp' width={580} height={657} />
       </header>

@@ -37,9 +37,10 @@ function AboutPage() {
             <p>Hi! I’m Tray (they/them) and I’m a design student at Stanford who’s
                 been drawing for nearly a decade. I'm mainly a designer and artist, but
                 I also love 3D modeling, writing, crocheting, and game development.
-                I'm a member of Stanford's Storyboard Club and Modern Music Ensemble as
-                a live artist/poetry reciter. I'm always looking for creative opportunities,
-                so please contact me if you have a project in mind! </p>
+                I'm an officer for Stanford's Storyboard Club, a graphic designer for Arbor Live,
+                and occasionally a live artist/poetry reciter for Stanford Modern Music Ensemble. 
+                I'm always looking for creative opportunities, so please contact me if you have 
+                a project in mind! </p>
             <h3>Contact me at: gtchen2@stanford.edu</h3>
         </div>
     )
