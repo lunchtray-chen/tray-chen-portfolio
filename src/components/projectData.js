@@ -43,7 +43,7 @@ export const designProjects = [
     description: 'Branding and UI/UX for a sustainable hand-made fashion company.',
     timeframe: 'Jan 2026 - March 2026',
     tools: 'Figma, Adobe Photoshop, Adobe Illustrator, Risograph Printer',
-    longdesc: 'Independently built full branding for a sustainability-focused fashion company, from logo to branding guidelines to website frontend.',
+    longdesc: 'Independently designed branding kit, website, and marketing materials for a sustainability-focused fashion company. All inspiration/website photos borrowed from Pinterest.',
     keywords: ['Classwork', 'UI/UX', 'Branding'], imgsrc: '/cloverknots/thumbnail.webp', hoveredsrc: '/cloverknots/home.gif',
     halfsrc: '/cloverknots/half.webp', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
       '/cloverknots/clover-3.webp', '/cloverknots/scarf.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', 
