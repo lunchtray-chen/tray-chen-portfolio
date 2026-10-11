@@ -47,7 +47,8 @@ export const designProjects = [
     keywords: ['Classwork', 'UI/UX', 'Branding'], imgsrc: '/cloverknots/thumbnail.webp', hoveredsrc: '/cloverknots/home.gif',
     halfsrc: '/cloverknots/half.webp', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
       '/cloverknots/clover-3.webp', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
-      '/cloverknots/clover-7.webp', '/cloverknots/clover-8.webp', '/cloverknots/clover-9.webp', '/cloverknots/clover-10.webp'
+      '/cloverknots/clover-7.webp', '/cloverknots/clover-8.webp', '/cloverknots/clover-9.webp', '/cloverknots/clover-10.webp', 
+      '/cloverknots/clover-11.webp'
     ]
   },
 
