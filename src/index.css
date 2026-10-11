@@ -154,7 +154,7 @@ img,
 @media (max-width: 480px) {}
 
 /* tablet */
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .intro {
     flex-direction: column;
     margin: 10vh auto;
@@ -198,6 +198,3 @@ img,
   }
 
 }
-
-/* small laptop */
-@media (max-width: 1024px) {}
