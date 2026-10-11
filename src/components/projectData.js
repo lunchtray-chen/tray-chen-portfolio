@@ -46,8 +46,7 @@ export const designProjects = [
     longdesc: 'Independently designed branding kit, website, and marketing materials for a sustainability-focused fashion company. All inspiration/website photos borrowed from Pinterest.',
     keywords: ['Classwork', 'UI/UX', 'Branding'], imgsrc: '/cloverknots/thumbnail.webp', hoveredsrc: '/cloverknots/home.gif',
     halfsrc: '/cloverknots/half.webp', imgseries: ['/cloverknots/clover-1.webp', '/cloverknots/clover-2.webp',
-      '/cloverknots/clover-3.webp', '/cloverknots/scarf.webp', '/cloverknots/home.gif', '/cloverknots/knot.gif', 
-      '/cloverknots/clothes.gif', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
+      '/cloverknots/clover-3.webp', '/cloverknots/clover-4.webp', '/cloverknots/clover-5.webp', '/cloverknots/clover-6.webp',
       '/cloverknots/clover-7.webp'
     ]
   },
