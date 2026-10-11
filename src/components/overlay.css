@@ -102,7 +102,7 @@
 
 .cloverknots {
     scrollbar-color: rgb(89, 116, 39) rgb(183, 195, 131);
-    background-image: url("/cloverknots/bg.webp");
+    /**background-image: url("/cloverknots/bg.webp");**/
     background-color: rgb(255, 244, 228);
     border: 8px solid rgb(81, 96, 14);
 }
