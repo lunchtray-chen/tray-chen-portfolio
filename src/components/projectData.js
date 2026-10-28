@@ -2,6 +2,8 @@
 
 /* FORMAT FOR DATA 
 - name (project name)
+- slug (unique url name: traychen.com/#projects/<slug> opens this overlay directly.
+changing it breaks links people already have)
 - type (routes to what format the overlay will be in)
 - description (short description for project cards)
 - timeframe (time the project took place)
@@ -19,8 +21,8 @@ PASSWORD-PROTECTED ENTRIES
 Entries with `locked: true` only keep their public half here (the card: name, type,
 description, keywords, imgsrc, hoveredsrc). The gated half — timeframe, tools, longdesc,
 halfsrc and imgseries — lives in PROTECTED_PROJECTS in worker/src/index.js and is only
-served after the password is entered, so it never ships in the bundle. `slug` is what the
-overlay asks the Worker for. See worker/README.md.
+served after the password is entered, so it never ships in the bundle. `slug` is also what
+the overlay asks the Worker for. See worker/README.md.
 */
 
 export const designProjects = [
@@ -39,7 +41,7 @@ export const designProjects = [
   },
 
   {
-    name: 'Cloverknots', type: 'cloverknots',
+    name: 'Cloverknots', slug: 'cloverknots', type: 'cloverknots',
     description: 'Branding and UI/UX for a sustainable hand-made fashion company.',
     timeframe: 'Jan 2026 - March 2026',
     tools: 'Figma, Adobe Photoshop, Adobe Illustrator, Risograph Printer',
@@ -53,7 +55,7 @@ export const designProjects = [
   },
 
   {
-    name: 'Quantum AI Institute', type: 'quantum',
+    name: 'Quantum AI Institute', slug: 'quantum-ai', type: 'quantum',
     description: 'Branding/research for community of leaders shaping the future of AI.',
     timeframe: 'June 2025 - Present',
     tools: 'Figma, Google Slides',
@@ -66,7 +68,7 @@ export const designProjects = [
 
 /** ARCHIVED ENTRY --> moved to book section
   {
-    name: 'Graphic Design Projects', type: 'normal',
+    name: 'Graphic Design Projects', slug: 'graphic-design', type: 'normal',
     description: 'Compilation of freelance and personal graphic design projects.',
     timeframe: 'Jan 2026 - Present',
     tools: 'Figma, Linocut Print, Risograph Print',
@@ -78,7 +80,7 @@ export const designProjects = [
  */
 
   {
-    name: 'Second Time Founders', type: 'normal',
+    name: 'Second Time Founders', slug: 'second-time-founders', type: 'normal',
     description: 'Designing internal tools for community of experienced founders.',
     timeframe: 'May 2025 - Sept 2025',
     tools: 'Notion, Google Sheets, Paradigm',
@@ -99,7 +101,7 @@ export const artProjects = [
   },
 
   {
-    name: 'Watchtower 72', type: 'watchtower',
+    name: 'Watchtower 72', slug: 'watchtower-72', type: 'watchtower',
     description: 'Indie game about a spaceship crew\'s last days in space.',
     timeframe: 'June 2024 - Present',
     tools: 'Python, Adobe Photoshop, Audacity',
@@ -113,7 +115,7 @@ export const artProjects = [
   },
 
   {
-    name: 'Stanford Arbor Live', type: 'normal',
+    name: 'Stanford Arbor Live', slug: 'arbor-live', type: 'normal',
     description: 'Posters designed to advertise the Arbor\'s music events.',
     timeframe: 'April 2026 - Present',
     tools: 'Adobe Photoshop, Figma, Procreate',
@@ -125,7 +127,7 @@ export const artProjects = [
   },
 
   {
-    name: 'Book Illustrations', type: 'normal',
+    name: 'Book Illustrations', slug: 'book-illustrations', type: 'normal',
     description: 'Covers/internal layouts completed for various book projects.',
     timeframe: 'Mar 2022 - Aug 2025',
     tools: 'Adobe Photoshop, Adobe InDesign',
@@ -138,7 +140,7 @@ export const artProjects = [
   },
 
   {
-    name: '3D Models', type: 'models',
+    name: '3D Models', slug: '3d-models', type: 'models',
     description: 'Models that I created in Blender!',
     timeframe: 'Sept 2025 - Jan 2026',
     tools: 'Blender, ProCreate (for concepting)',
@@ -148,7 +150,7 @@ export const artProjects = [
   },
 
   {
-    name: 'Life Drawings', type: 'normal',
+    name: 'Life Drawings', slug: 'life-drawings', type: 'normal',
     description: 'I like drawing people on my ipad :)',
     timeframe: 'May 2025 - Present',
     tools: 'ProCreate',

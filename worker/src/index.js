@@ -93,6 +93,8 @@ const PROTECTED_PROJECTS = {
       'artifex/physical/06.webp',
       'artifex/physical/07.webp',
       'artifex/physical/08.webp',
+      'artifex/physical/09.webp',
+      'artifex/physical/10.webp',
     ],
   },
 
