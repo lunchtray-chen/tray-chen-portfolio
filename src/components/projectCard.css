@@ -5,10 +5,10 @@
 }
 
 .project-card img {
-    border-radius: 12px;
+    border-radius: 6px;
     transition: all 0.2s ease 0s;
     cursor: pointer;
-    filter: drop-shadow(#c2bfbb 1px 7px 4px);
+    /**filter: drop-shadow(#c2bfbb 1px 7px 4px);**/
     border: 2px solid black;
     aspect-ratio:  16 / 9;
     background-color: #929299;
